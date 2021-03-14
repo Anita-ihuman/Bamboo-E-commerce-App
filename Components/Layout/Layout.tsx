@@ -1,8 +1,12 @@
 import Navbar from '../Nav/nav'
-import Footer from '../Footer/footer' 
+import Footer from "../Footer/Footer"
 import Head from 'next/head'
 
-const Layout = ({ children }) => {
+interface PropE {
+  children: string & any
+}
+
+const Layout = ({ children }: PropE) => {
   return (
     <div className="content">
       <Head>
