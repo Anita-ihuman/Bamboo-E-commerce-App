@@ -1,6 +1,12 @@
-import Layout from '../Component/Layout/Layout'
+import Layout from '../Components/Layout/Layout'
 
-function MyApp({ Component, pageProps }) {
+
+interface ElementProps {
+  Component: string & any;
+  pageProps: string
+}
+
+export function Element({ pageProps, Component }: ElementProps) {
   return (
     <Layout>
       <Component {...pageProps} />
@@ -8,4 +14,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default  Element
