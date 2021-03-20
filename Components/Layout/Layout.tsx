@@ -14,7 +14,7 @@ const Layout = ({ children }: PropE) => {
       </Head>
       <Navbar />
       {children}
-      <Footer />
+      <Footer title="" href="" label=""/>
     </div>
   )
 }
