@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from "./footer.module.scss";
+import styles from './footer.module.css'
 
 interface FooterLink {
   title: string
@@ -34,7 +34,7 @@ export function Footer({ title, href }: FooterLink) {
               <a href="">TERMS & CODITION POLICY</a>
             </div>
             <div>
-              <img />
+              <img src=".Logo2.png"/>
             </div>
             <div>© 2019 Bamboo All Rights Reserved</div>
           </article>

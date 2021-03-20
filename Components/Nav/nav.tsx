@@ -1,8 +1,10 @@
 import styles from './nav.module.css'
-
+import Logo from './Logo.png';
+  
 interface PropE {
  
-}
+};
+
 
 const Navbar = ({ }: PropE) => {
   return (
@@ -15,7 +17,7 @@ const Navbar = ({ }: PropE) => {
         </div>
 
         <div className={styles.content_logo}>
-          <img src="./Logo.png" />
+          <img src={Logo} />
         </div>
         <div className={styles.content_shop}>
           <a>
