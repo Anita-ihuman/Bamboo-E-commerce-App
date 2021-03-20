@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './footer.module.scss'
+import styles from "./footer.module.scss";
 
 interface FooterLink {
   title: string
