@@ -1,57 +1,43 @@
+import React, { useState } from 'react'
 import styles from './footer.module.scss'
 
 interface FooterLink {
   title: string
   href: string
-}
-interface FooterSection {
-  title: string
-  links: FooterLink[]
+  label: string
 }
 
-const footerSections: FooterSection[] = [
-  {
-    title: 'More on The Blog',
-    links: [
-      { title: 'About MNTN', href: '/' },
-     
-    ],
-  },
-  {
-    title: 'More on MNTN',
-    links: [
-      { title: 'The Team', href: '/' },
-      
-    ],
-  },
-]
-
-const Footer = () => {
+export function Footer({ title, href }: FooterLink) {
   return (
     <>
       <footer className={styles.footer}>
-        <section className={styles.Third}>
-          <article className={styles.text}>
-            <div>
-              <img src="Logo.png" className={styles.textimg} />
-              <p>Get out there & discover your next slope, mountain & destination!</p>
+        <section className={styles.blackbox}>
+          <article className={styles.blackbox_top}>
+            <div className={styles.blackbox_topleft}>
+              <p>{title}</p>
+              <form className={styles.blackbox_input}>
+                <label htmlFor="name">Enter Your E-mail Address Here </label>
+                <input type="text" id="name" name="fname" />
+              </form>
             </div>
-            <div className={styles.copy}>Copyright 2019 MNTN, Inc. Terms & Privacy</div>
+            <div></div>
+            <div className={styles.blackbox_topright}>
+              <p>JOIN US ON</p>
+              <a href="">{href}</a>
+              <a href="">twitter</a>
+              <a href="">instagram</a>
+            </div>
           </article>
-          {footerSections.map(({ title, links }) => (
-            <section key={title} className={styles.text1}>
-              <h3>{title}</h3>
-              <ul>
-                {links.map((link) => (
-                  <li key={link.title}>
-                    <a href={link.href} className={styles.list}>
-                      {link.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
+
+          <article className={styles.blackbottom}>
+            <div>
+              <a href="">TERMS & CODITION POLICY</a>
+            </div>
+            <div>
+              <img />
+            </div>
+            <div>© 2019 Bamboo All Rights Reserved</div>
+          </article>
         </section>
       </footer>
     </>
