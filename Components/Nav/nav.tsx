@@ -1,4 +1,4 @@
-import styles from " ./nav.module.scss";
+import styles from './nav.module.css'
 
 interface PropE {
  
@@ -9,15 +9,21 @@ const Navbar = ({ }: PropE) => {
     <nav className={styles.nav}>
       <section className={styles.content}>
         <div className={styles.content_menu}>
-          <i className="fa fa-bars" aria-hidden="true"></i>
+          <a>
+            <i className="fa fa-bars" aria-hidden="true"></i>
+          </a>
         </div>
 
         <div className={styles.content_logo}>
-          <img src="" />
+          <img src="./Logo.png" />
         </div>
         <div className={styles.content_shop}>
-          <i className="fa fa-search" aria-hidden="true"></i>
-          <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a>
+            <i className="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a>
+            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+          </a>
         </div>
       </section>
     </nav>

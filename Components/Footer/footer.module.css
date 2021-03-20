@@ -1,0 +1,7 @@
+.blackbox{
+    background-color: white;
+}
+.blackbottom{
+    display: flex;
+    justify-content: space-around;
+}
