@@ -1,5 +1,5 @@
 import styles from './nav.module.css'
-import Logo from './Logo.png';
+
   
 interface PropE {
  
@@ -11,20 +11,20 @@ const Navbar = ({ }: PropE) => {
     <nav className={styles.nav}>
       <section className={styles.content}>
         <div className={styles.content_menu}>
-          <a>
-            <i className="fa fa-bars" aria-hidden="true"></i>
+          <a href="" className={styles.content_shopicon}>
+            <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
           </a>
         </div>
 
         <div className={styles.content_logo}>
-          <img src={Logo} />
+          <img src="./Logo.png" />
         </div>
         <div className={styles.content_shop}>
-          <a>
-            <i className="fa fa-search" aria-hidden="true"></i>
+          <a href="" className={styles.content_shopicon}>
+            <i className="fa fa-search fa-2x" aria-hidden="true"></i>
           </a>
-          <a>
-            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a href="" className={styles.content_shopicon}>
+            <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
           </a>
         </div>
       </section>
