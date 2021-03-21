@@ -1,16 +1,22 @@
 /* 
 link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to-create-masonry-layouts */
 
-.container {
-  min-height: 100vh;
-  padding: 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header{
+
 }
-
-
+.content{
+    height: 100vh;
+text-align: center;
+background-image: url("/Background.png");
+ background-repeat: no-repeat;
+  background-position: center; 
+  top: -75px;
+  position: relative;
+  padding-top: 100px;
+}
+.btn{
+  text-align: center;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

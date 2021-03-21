@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './footer.module.css'
-import img from './images/Logo2.png'
+
 
 interface FooterLink {
   title: string
@@ -48,9 +48,8 @@ export function Footer({}: FooterLink) {
             <div className={styles.blackbottom_text}>
               <a href="">TERMS & CODITION POLICY</a>
             </div>
-            <div>
-              
-              <a href="/Logo2.png">{img}</a>
+            <div className={styles.blackbottom_img}>
+              <img src="/Logo2.png" width="80%" />
             </div>
             <div className={styles.blackbottom_text}>© 2019 Bamboo All Rights Reserved</div>
           </article>
