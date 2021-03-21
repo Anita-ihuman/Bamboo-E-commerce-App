@@ -17,7 +17,9 @@ const Navbar = ({ }: PropE) => {
         </div>
 
         <div className={styles.content_logo}>
-          <img src="./Logo.png" />
+    
+            <img src="/Logo.png" />
+       
         </div>
         <div className={styles.content_shop}>
           <a href="" className={styles.content_shopicon}>
