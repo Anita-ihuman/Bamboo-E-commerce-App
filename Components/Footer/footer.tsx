@@ -7,7 +7,7 @@ interface FooterLink {
   label: string
 }
 
-export function Footer({ }: FooterLink) {
+export function Footer({}: FooterLink) {
   return (
     <>
       <footer className={styles.footer}>
@@ -25,15 +25,20 @@ export function Footer({ }: FooterLink) {
             </div>
             <div className={styles.blackbox_line}></div>
             <div className={styles.blackbox_topright}>
-              <p>JOIN US ON</p>
-              <a href="">
-                <img src="Facebook.png" />
-              </a>
-              <a href="">
-                <img src="Facebook.png" />
-              </a>
-              <a href="">
-                <img src="Instagram.png" />
+              <div className={styles.blackbox_toptext}>
+                <p>JOIN US ON</p>
+              </div>
+
+              <div className={styles.social}>
+                <img src="https://img.icons8.com/fluent-systems-filled/30/4a90e2/facebook-new.png" />
+              </div>
+
+              <div className={styles.social}>
+                <img src="https://img.icons8.com/color/31/4a90e2/twitter-circled--v1.png" />
+              </div>
+
+              <a className={styles.instagram1}>
+                <i className="fab fa-instagram fa-1x"></i>
               </a>
             </div>
           </article>
