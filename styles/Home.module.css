@@ -2,20 +2,48 @@
 link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to-create-masonry-layouts */
 
 .header{
-
+   
 }
 .content{
-    height: 100vh;
+ height: 100vh;
 text-align: center;
 background-image: url("/Background.png");
  background-repeat: no-repeat;
   background-position: center; 
-  top: -75px;
+  top: -105px;
   position: relative;
   padding-top: 100px;
 }
+.content h1{
+  font-family: Merriweather;
+font-style: normal;
+font-weight: normal;
+font-size: 42px
+}
 .btn{
-  text-align: center;
+background: #FFB338;
+border-radius: 30px;
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #181813;
+padding: 15px 40px;
+border: 2px solid #FFB338;
+
+}
+.content p {
+  font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+align-items: center;
+padding: 0px 460px;
+
+}
+.content img{
+  position: relative;
+  top: -30px;
 }
 @media (max-width: 600px) {
   .grid {
