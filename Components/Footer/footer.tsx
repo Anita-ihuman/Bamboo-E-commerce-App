@@ -7,36 +7,45 @@ interface FooterLink {
   label: string
 }
 
-export function Footer({ title, href }: FooterLink) {
+export function Footer({ }: FooterLink) {
   return (
     <>
       <footer className={styles.footer}>
         <section className={styles.blackbox}>
           <article className={styles.blackbox_top}>
             <div className={styles.blackbox_topleft}>
-              <p>{title}</p>
-              <form className={styles.blackbox_input}>
-                <label htmlFor="name">Enter Your E-mail Address Here </label>
-                <input type="text" id="name" name="fname" />
+              <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+              <form className={styles.blackbox_form}>
+                <input
+                  className={styles.blackbox_input}
+                  type="email"
+                  placeholder="Enter Your E-mail Address Here"
+                />
               </form>
             </div>
-            <div></div>
+            <div className={styles.blackbox_line}></div>
             <div className={styles.blackbox_topright}>
               <p>JOIN US ON</p>
-              <a href="">{href}</a>
-              <a href="">twitter</a>
-              <a href="">instagram</a>
+              <a href="">
+                <img src="Facebook.png" />
+              </a>
+              <a href="">
+                <img src="Facebook.png" />
+              </a>
+              <a href="">
+                <img src="Instagram.png" />
+              </a>
             </div>
           </article>
 
           <article className={styles.blackbottom}>
-            <div>
+            <div className={styles.blackbottom_text}>
               <a href="">TERMS & CODITION POLICY</a>
             </div>
             <div>
-              <img src=".Logo2.png"/>
+              <img src=".Logo2.png" />
             </div>
-            <div>© 2019 Bamboo All Rights Reserved</div>
+            <div className={styles.blackbottom_text}>© 2019 Bamboo All Rights Reserved</div>
           </article>
         </section>
       </footer>
