@@ -21,92 +21,79 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   font-size: 13px;
   cursor: cursor;
 }
+.content {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -100px;
+  box-sizing: border-box;
+  align-items: center;
 
+}
+.slider_wrapper{
+    box-sizing: border-box;
+  align-items: center;
+    display: flex;
+    overflow: hidden;
+}
 .btn:hover {
   color: #ffffff;
   background: #222222;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
-
-
-
-.slider-wrapper {
-  position: relative;
-  height: 100vh;
+#left{
+position: absolute;
+top: 10%;
+left: 0;
+transform: translateY(-50);
+width: 10%;
+height: 80%;
+background: none;
+border:none ;
+outline: none;
+}
+#right{
+  background: none;
+position: absolute;
+top: 10%;
+border:none ;
+left: 1151.5px;
+transform: translateY(50);
+width: 10%;
+height: 80%;
+outline: none;
+transition: 0.5s;
+}
+#right:hover{
+  transition: 0.5s;
+cursor: pointer;
+color: white;
+}
+#left:hover{
+  transition: 0.5s;
+cursor: pointer;
 
 }
 
-.slide {
-  height: 70vh;
-  background-size: cover !important;
-}
-
-.slide::before {
-  content: '';
-  display: block;
-
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(transparent),
-    to(rgba(0, 0, 0, 0.9))
-  );
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-  bottom: 0;
-  left: 0;
-}
-
-.previousButton,
-.nextButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
-  width: 32px;
-  height: 32px;
-  text-indent: -9999px;
-  cursor: pointer;
-}
-
-.previousButton:hover,
-.nextButton:hover {
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
-}
-
-.previousButton {
-  left: 0;
-  -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
-  transform: rotate(180deg) translateY(calc(50% + 0px));
-}
-
-.previousButton:hover {
-  left: -10px;
-}
-
-.nextButton {
-  right: 0;
-}
-
-.nextButton:hover {
-  right: -10px;
-}
 
 .slider_content {
   text-align: center;
   left: 0;
+  min-width: 100%;
+  height: 100vh;
+  transition: 0.5s;
 }
 
+
 .slider_content .inner {
-  padding: 0 70px;
+  padding: 0 50px;
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -164,61 +151,3 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   }
 }
 /* ==============>>>>>>>>>>    slider annimation */
-.slide h1 {
-  transition: all 0.3s ease;
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.slide button {
-  transition: all 0.3s ease;
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.slide p {
-  transition: all 0.3s ease;
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.slide.animateIn.previous h1,
-.slide.current h1,
-.slide.animateIn.next h1,
-.slide.animateIn.previous button,
-.slide.current button,
-.slide.animateIn.next button,
-.slide.animateIn.previous p,
-.slide.current p,
-.slide.animateIn.next p {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition-delay: 0.9s;
-  transition-delay: 0.9s;
-  opacity: 1;
-}
-
-.slide.animateIn.previous p,
-.slide.animateIn.next p {
-  -webkit-transition-delay: 1.1s;
-  transition-delay: 1.1s;
-}
-
-.slide.animateIn.previous btn,
-.slide.animateIn.next btn {
-  -webkit-transition-delay: 1.3s;
-  transition-delay: 1.3s;
-}
-
-.slide.animateOut h1 {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-.slide.animateOut p {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}

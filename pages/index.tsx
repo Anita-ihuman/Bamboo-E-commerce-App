@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Home from './Home'
+import Home from '../Components/Content/Intro/Home'
 
 const App = () => {
   return (
