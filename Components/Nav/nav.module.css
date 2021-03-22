@@ -1,26 +1,23 @@
-.nav{
-   background: rgba(24, 24, 19, 0.7);
-mix-blend-mode: multiply;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-opacity: 1px;
-padding : 20px 0;
- position: relative;
-z-index: 30;
+.nav {
+  background: rgba(24, 24, 19, 0.7);
+  mix-blend-mode: multiply;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  opacity: 1px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 30;
 }
 
-.content{
-
-    display: flex;
-    justify-content:space-around;
-    
+.content {
+  display: flex;
+  justify-content: space-around;
 }
-.content_logo{
-    margin: 0px 350px;
+.content_logo {
+  margin: 0px 350px;
 }
-.content_shop a{
-  
-    padding: 0 20px;
+.content_shop a {
+  padding: 0 20px;
 }
-.content_shopicon{
-   color: white;
+.content_shopicon {
+  color: white;
 }
