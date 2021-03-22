@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-around;
   border-top: 2px solid #ededed;
-  padding: 100px 50px;
+  padding: 100px 0px;
 }
 .blackbox_top {
   margin: 0 0px;
@@ -33,7 +33,7 @@
 .blackbox_topright {
   padding-top: 19px;
   display: flex;
-  margin-left: 350px;
+  margin-left: 330px;
   padding-left: 0px;
   align-items: flex-start;
   width: 20%;
@@ -93,4 +93,34 @@
 }
 .social{
     margin: 10px;
+}
+
+
+
+@media (max-width: 700px) {
+ .blackbox_top {
+  margin: 0 0px;
+  flex-wrap: wrap;
+  padding: 23px 20px;
+}
+.blackbox_topright {
+  padding-top: 9px;
+  display: flex;
+margin: 0;
+width:100% ;
+  align-items: center;
+  justify-content: center;
+}
+.blackbox_topleft {
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.blackbox_toptext {
+ flex-wrap: nowrap;
+}
+.blackbox_line {
+display: none;
+}
+
 }

@@ -47,6 +47,11 @@ font-size: 18px;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   cursor: pointer;
 }
+.dot{
+
+  width: 100%;
+
+}
 #left{
 position: absolute;
 top: 10%;

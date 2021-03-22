@@ -11,7 +11,7 @@ const content = [
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
     btn: 'SEE MORE',
-    image: '/Background.png',
+    image: './images/Background.png',
   },
   {
     title: 'INDOORS',
@@ -39,9 +39,9 @@ function Counter() {
   }
   const goRight = () => {
     (x === -100 * (content.length-1))?setX(0):
-    setX(x - 100)
+      setX(x - 100)
+    
   }
-    ;
   return (
     <div className={styles.content}>
       <section className={styles.slider_wrapper}>
@@ -50,7 +50,7 @@ function Counter() {
             key={index}
             className={styles.slider_content}
             style={{
-              background: `url('${item.image}' 
+              background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
             }}
@@ -62,6 +62,7 @@ function Counter() {
               <p>{item.description2}</p>
               <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
+              <div className={styles.dot}> {index === x ? '● ○ ● ' : ' ● ○ ●'}</div>
             </div>
           </div>
         ))}
