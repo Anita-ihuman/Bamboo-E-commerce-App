@@ -9,14 +9,7 @@ const App = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/Logo2.png" />
       </Head>
-      <Home
-        intro="INDOORS"
-        head="See Bamboo’s New Range Of Indoor Furniture"
-        text="Classic meet modern living"
-        text2="Bamboo has a fantastic range of indoor furniture,"
-        text3=" perfect for any modern home"
-        button="SEE MORE"
-      />
+      <Home />
     </main>
   )
 }

@@ -1,33 +1,54 @@
-import Head from 'next/head'
+import Slider from 'react-animated-slider'
+import 'react-animated-slider/build/horizontal.css'
+import 'normalize.css/normalize.css'
 import styles from '../styles/Home.module.css'
 
-interface HomeProp {
-  intro: string
-  text: string
-  text2: string
-  text3: string
-  button: string
-  head: string
-}
+const content = [
+  {
+    title: 'INDOORS',
+    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    description:
+      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    btn: 'SEE MORE',
+    image: 'https://famfi.ca/wp-content/uploads/2020/01/rawpixel-760112-unsplash-scaled.jpg',
+  },
+  {
+    title: 'INDOORS',
+    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    description:
+      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    btn: 'SEE MORE',
+    image: 'https://i.imgur.com/DCdBXcq.jpg',
+  },
+  {
+    title: 'INDOORS',
+    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    description:
+      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    btn: 'SEE MORE',
+    image: 'https://i.imgur.com/DvmN8Hx.jpg',
+  },
+]
 
-
-export function Home({ head, intro, text, text3, text2, button }: HomeProp) {
-  return (
-    <>
-      <header className={styles.header}>
-        <article className={styles.content}>
-          <h3>{intro}</h3>
-          <h1>{head}</h1>
-          <p>{text}</p>
-          <p>{text2}</p>
-          <p>{text3}</p>
-          <img src="/Navigation.png" width="80%" />
-          <div>
-            <button className={styles.btn}>{button}</button>
+const Sliders = () => (
+  <div>
+    <Slider className={styles.slider_wrapper}>
+      {content.map((item, index) => (
+        <div
+          key={index}
+          className={styles.slider_content}
+          style={{ background: `url('${item.image}') no-repeat center center` }}
+        >
+          <div className={styles.inner}>
+            <h3>{item.title}</h3>
+            <h1> {item.big}</h1>
+            <p>{item.description}</p>
+            <button className={styles.btn}>{item.btn}</button>
           </div>
-        </article>
-      </header>
-    </>
-  )
-}
-export default Home
+         
+        </div>
+      ))}
+    </Slider>
+  </div>
+)
+export default Sliders
