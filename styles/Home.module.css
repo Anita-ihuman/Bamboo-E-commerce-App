@@ -5,20 +5,21 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
    
 }
 .content{
- height: 100vh;
+ height: 90vh;
 text-align: center;
 background-image: url("/Background.png");
  background-repeat: no-repeat;
   background-position: center; 
-  top: -105px;
+  top: -90px;
   position: relative;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .content h1{
   font-family: Merriweather;
 font-style: normal;
 font-weight: normal;
-font-size: 42px
+font-size: 42px;
+margin:30px 0;
 }
 .btn{
 background: #FFB338;
@@ -30,20 +31,22 @@ font-size: 18px;
 color: #181813;
 padding: 15px 40px;
 border: 2px solid #FFB338;
-
+top: -40px;
+position: relative;
 }
 .content p {
-  font-family: Inter;
+ font-family: Inter;
 font-style: normal;
-font-weight: bold;
-font-size: 18px;
+font-weight: normal;
+font-size: 24px;
 align-items: center;
-padding: 0px 460px;
+padding: 0px 0px;
+margin: 8px;
 
 }
 .content img{
   position: relative;
-  top: -30px;
+  top: -80px;
 }
 @media (max-width: 600px) {
   .grid {
