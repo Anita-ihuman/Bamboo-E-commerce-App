@@ -7,24 +7,27 @@ const content = [
   {
     title: 'INDOORS',
     big: 'See Bamboo’s New Range Of Indoor Furniture',
-    description:
-      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    description: 'Classic meet modern living, ',
+    description2: ' Bamboo has a fantastic range of indoor furniture,',
+    description3: ' perfect for any modern home',
     btn: 'SEE MORE',
     image: '/Background.png',
   },
   {
     title: 'INDOORS',
     big: 'See Bamboo’s New Range Of Indoor Furniture',
-    description:
-      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    description: 'Classic meet modern living, ',
+    description2: ' Bamboo has a fantastic range of indoor furniture,',
+    description3: ' perfect for any modern home',
     btn: 'SEE MORE',
     image: 'https://i.imgur.com/DCdBXcq.jpg',
   },
   {
     title: 'INDOORS',
     big: 'See Bamboo’s New Range Of Indoor Furniture',
-    description:
-      'Classic meet modern living, Bamboo has a fantastic range of indoor furniture,perfect for any modern home',
+    description: 'Classic meet modern living,',
+    description2: ' Bamboo has a fantastic range of indoor furniture,',
+    description3: ' perfect for any modern home',
     btn: 'SEE MORE',
     image: 'https://i.imgur.com/DvmN8Hx.jpg',
   },
@@ -56,6 +59,8 @@ function Counter() {
               <h3>{item.title}</h3>
               <h1> {item.big}</h1>
               <p>{item.description}</p>
+              <p>{item.description2}</p>
+              <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
             </div>
           </div>
