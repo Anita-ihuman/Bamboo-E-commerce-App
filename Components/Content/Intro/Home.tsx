@@ -62,7 +62,10 @@ function Counter() {
               <p>{item.description2}</p>
               <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
-              <div className={styles.dot}> {index === x ? '● ○ ● ' : ' ● ○ ●'}</div>
+              <div className={styles.dot}>
+             
+                {index === x ? ' ● ○  ' : '○  ● ' }{'○ '}
+              </div>
             </div>
           </div>
         ))}

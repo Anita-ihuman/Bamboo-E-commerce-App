@@ -1,6 +1,5 @@
 .blackbox {
-  background-color: 
-#181813;
+  background-color: #181813;
 }
 .blackbottom {
   display: flex;
@@ -91,36 +90,33 @@
   border-radius: 50%;
   margin: 10px;
 }
-.social{
-    margin: 10px;
+.social {
+  margin: 10px;
 }
-
-
 
 @media (max-width: 700px) {
- .blackbox_top {
-  margin: 0 0px;
-  flex-wrap: wrap;
-  padding: 23px 20px;
-}
-.blackbox_topright {
-  padding-top: 9px;
-  display: flex;
-margin: 0;
-width:100% ;
-  align-items: center;
-  justify-content: center;
-}
-.blackbox_topleft {
- flex-wrap: wrap;
- justify-content: center;
-}
+  .blackbox_top {
+    margin: 0 0px;
+    flex-wrap: wrap;
+    padding: 23px 20px;
+  }
+  .blackbox_topright {
+    padding-top: 9px;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .blackbox_topleft {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.blackbox_toptext {
- flex-wrap: nowrap;
-}
-.blackbox_line {
-display: none;
-}
-
+  .blackbox_toptext {
+    flex-wrap: nowrap;
+  }
+  .blackbox_line {
+    display: none;
+  }
 }
