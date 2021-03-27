@@ -3,7 +3,11 @@ import React, { useState } from 'react'
 import Link from '../../../node_modules/next/link'
 import styles from './Featured.module.css'
 
-const Content = [
+interface Content {
+  image: string
+}
+
+const Content: Content[] = [
   {
     image: '../Intro/images/Background.png',
   },
@@ -36,18 +40,15 @@ const Content = [
   },
 ]
 
-
 const App = () => {
-
-
-  
   return (
     <>
       <section className={styles.section}>
         <div className={styles.container}>
-          {Content.map((items, index) => (
+          {Content.map((image, index) => (
             <div key={index} className={styles.slider_content} style={{}}>
-              <img className={styles.img}>{items.image}</img>
+              {/* {image} */}
+              <img>{image}</img>
             </div>
           ))}
         </div>
