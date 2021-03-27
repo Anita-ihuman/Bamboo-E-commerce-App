@@ -1,0 +1,10 @@
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fil, minmax(200px, 1fr));
+  grid-template-rows: masonry; /* this will do the magic */
+  grid-gap: 10px;
+}
+.img {
+  width:100%;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import 'react-animated-slider/build/horizontal.css'
 import 'normalize.css/normalize.css'
 import styles from '../../../styles/Home.module.css'
+import Image from '../Intro/images/Background.png'
 
 const content = [
   {
@@ -11,7 +12,7 @@ const content = [
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
     btn: 'SEE MORE',
-    image: './images/Background.png',
+    image: '../Intro/images/Background.png',
   },
   {
     title: 'INDOORS',
@@ -63,8 +64,8 @@ function Counter() {
               <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
               <div className={styles.dot}>
-             
-                {index === x ? ' ● ○  ' : '○  ● ' }{'○ '}
+                {index === x ? ' ● ○  ' : '○  ● '}
+                {'○ '}
               </div>
             </div>
           </div>
