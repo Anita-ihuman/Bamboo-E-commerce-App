@@ -1,10 +1,25 @@
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fil, minmax(200px, 1fr));
-  grid-template-rows: masonry; /* this will do the magic */
-  grid-gap: 10px;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+    position: relative;
 }
 .img {
   width:100%;
 }
+
+
+  .slider_content {
+     background-color: #eee;
+     border-radius: 5px;
+   
+  }
+
+
+  
+
+  .slider_content:hover:after {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .75);
+  }
