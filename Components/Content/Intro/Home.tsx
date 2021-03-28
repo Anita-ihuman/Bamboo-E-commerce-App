@@ -12,7 +12,7 @@ const content = [
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
     btn: 'SEE MORE',
-    image: '../Intro/images/Background.png',
+    image: '/images/Background.png',
   },
   {
     title: 'INDOORS',

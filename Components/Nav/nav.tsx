@@ -18,7 +18,7 @@ const Navbar = ({ }: PropE) => {
 
         <div className={styles.content_logo}>
     
-            <img src="/Logo.png" />
+            <img src="/images/Logo.png" />
        
         </div>
         <div className={styles.content_shop}>
