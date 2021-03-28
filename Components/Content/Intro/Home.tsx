@@ -52,7 +52,6 @@ function Counter() {
               background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
-              
             }}
           >
             <div className={styles.inner}>
@@ -70,10 +69,10 @@ function Counter() {
           </div>
         ))}
         <button id={styles.left} onClick={goLeft}>
-          <i className="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+          <img src="/images/left.png" />
         </button>
         <button id={styles.right} onClick={goRight}>
-          <i className="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
+          <img src="/images/right.png" />
         </button>
       </section>
     </div>

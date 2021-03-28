@@ -54,8 +54,8 @@ font-size: 18px;
 }
 #left{
 position: absolute;
-top: 10%;
-left: 0;
+top:11%;
+left: 35px;
 transform: translateY(-50);
 width: 10%;
 height: 80%;
@@ -66,9 +66,9 @@ outline: none;
 #right{
   background: none;
 position: absolute;
-top: 10%;
+top: 11%;
 border:none ;
-left: 1151.5px;
+left: 1100px;
 transform: translateY(50);
 width: 10%;
 height: 80%;

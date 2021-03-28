@@ -13,7 +13,8 @@
   justify-content: space-around;
 }
 .content_logo {
-  margin: 0px 350px;
+  margin: 0px 200px;
+  padding-left: 110px;
 }
 .content_shop a {
   padding: 0 20px;
