@@ -49,7 +49,7 @@ export function Footer({}: FooterLink) {
               <a href="">TERMS & CODITION POLICY</a>
             </div>
             <div className={styles.blackbottom_img}>
-              <img src="/Logo2.png" width="80%" />
+              <img src="/images/Logo2.png" width="100%" />
             </div>
             <div className={styles.blackbottom_text}>© 2019 Bamboo All Rights Reserved</div>
           </article>

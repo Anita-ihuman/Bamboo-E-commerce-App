@@ -39,9 +39,7 @@ function Counter() {
     x === 0 ? setX(-100 * (content.length - 1)) : setX(x + 100)
   }
   const goRight = () => {
-    (x === -100 * (content.length-1))?setX(0):
-      setX(x - 100)
-    
+    x === -100 * (content.length - 1) ? setX(0) : setX(x - 100)
   }
   return (
     <div className={styles.content}>
@@ -54,6 +52,7 @@ function Counter() {
               background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
+              
             }}
           >
             <div className={styles.inner}>
