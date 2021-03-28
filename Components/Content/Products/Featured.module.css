@@ -1,21 +1,50 @@
-
+.section{
+  text-align: center;
+}
 .container {
     display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: masonry;
+   gap: 30px;
     position: relative;
+
+  
+}
+.btn{
+ transition: all 0.5s ease;
+  border: none;
+  font-family: Inter;
+ background: #FFB338;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 17px 38px;
+ font-family: Inter;
+font-style: normal;
+font-size: 18px;
+  cursor: cursor;
+  margin: 40px 0px;
+}
+.btn:hover {
+  color: #ffffff;
+  background: #222222;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
 }
 .img {
-  width:100%;
+ width: 396px;
+    object-fit: cover;
+     max-block-size: 100%;
+     border-radius: 10px;
 }
 
 
   .slider_content {
-     background-color: #eee;
+  
      border-radius: 5px;
    
   }
-
 
   
 

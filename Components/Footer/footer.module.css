@@ -3,9 +3,12 @@
 }
 .blackbottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-top: 2px solid #ededed;
   padding: 100px 0px;
+}
+.blackbottom_img{
+  padding-left: 30px;
 }
 .blackbox_top {
   margin: 0 0px;
@@ -32,7 +35,7 @@
 .blackbox_topright {
   padding-top: 19px;
   display: flex;
-  margin-left: 330px;
+  margin-left: 280px;
   padding-left: 0px;
   align-items: flex-start;
   width: 20%;
@@ -60,7 +63,7 @@
   font-weight: bold;
   font-size: 12px;
   font-family: Inter;
-  padding-top: 20px;
+  padding-top: 30px;
   color: #f2f2f2;
 }
 .blackbottom_text a {
