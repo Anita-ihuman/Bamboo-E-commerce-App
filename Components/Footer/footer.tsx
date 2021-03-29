@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './footer.module.css'
 
-
 interface FooterLink {
   title: string
   href: string
