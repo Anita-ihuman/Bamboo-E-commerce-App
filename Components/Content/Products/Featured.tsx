@@ -1,8 +1,6 @@
-
 import React, { useState } from 'react'
 import Link from '../../../node_modules/next/link'
 import styles from './Featured.module.css'
-
 
 const App = () => {
   const [Content, setContent] = useState([
