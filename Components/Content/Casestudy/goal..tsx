@@ -1,31 +1,31 @@
 import React, { useState } from 'react'
 import Link from '../../../node_modules/next/link'
-import styles from './Featured.module.css'
-import Masonry from 'react-masonry-css'
+import styles from './styles.module.css'
 
-const App = () => {
+
+const Goal = () => {
   return (
     <>
-      <section className={styles.section}>
+           <section className={styles.section}>
         <nav className={styles.nav}>
           <img className="logo"></img>
         </nav>
-        <h1 className={styles.boldtext}>Casestudy</h1>
+        <h1 className={styles.boldtext}>goal</h1>
         <div className={styles.container}>
-          <div className={styles.container_text}>
+          <div className={styles.container_textleft}>
+            <h3>SALE SOLUTION</h3>
             <p>
-              Bamboo is a furnitutre company that provide quality product to meet your indoor or
-              outdoor furniture needs.
-            </p>
-            <br />
-            <p>
-              Bamboo e-commerce site is a solution that offer a simple system that organize
-              different product where peoples(families, businesses) can intereact with the product.
+              The Bamboo E-commerce site provide a digital space were digital transaction can take
+              place between the buyer and seller.
             </p>
           </div>
-          <div className={styles.container_imgs}>
-            <img src="" />
-            <img src="" />
+          <br />
+          <div className={styles.container_texright}>
+            <h3>PRODUCT HUB</h3>
+            <p>
+              The Platform provide a single source of truth for all all things furniture to
+              interested parties and eventually be converted to a Lead
+            </p>
           </div>
         </div>
       </section>
@@ -33,4 +33,6 @@ const App = () => {
   )
 }
 
-export default App
+export default Goal
+
+ 
