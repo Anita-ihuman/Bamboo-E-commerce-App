@@ -18,5 +18,13 @@
 
 }
 .boldtext{
-    
+
+font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 145px;
+display: flex;
+align-items: center;
+color: #40514E;
 }

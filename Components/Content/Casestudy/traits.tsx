@@ -8,7 +8,8 @@ const Trait = () => {
     <>
       <section className={styles.section_trait}>
         <nav className={styles.nav}>
-          <img className="logo"></img>
+          <img src="/images/baboo.png" className="logo" />
+          <img src="/images/Casestudylogo.png" className="logo" />
         </nav>
         <h1 className={styles.boldtext}>Traits</h1>
         <div className={styles.container_trait}>
@@ -20,7 +21,7 @@ const Trait = () => {
             </ul>
           </div>
           <div className={styles.container_right}>
-            <img src="" />
+            <img src="/images/traits.png" />
           </div>
         </div>
       </section>

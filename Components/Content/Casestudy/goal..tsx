@@ -8,7 +8,8 @@ const Goal = () => {
     <>
       <section className={styles.section_goal}>
         <nav className={styles.nav}>
-          <img className="logo"></img>
+          <img src="/images/baboo.png" className="logo" />
+          <img src="/images/Casestudylogo.png" className="logo" />
         </nav>
         <h1 className={styles.boldtext}>goal</h1>
         <div className={styles.container_goal}>

@@ -8,7 +8,7 @@ const Casestudy = () => {
     <>
       <section className={styles.section_case}>
         <nav className={styles.nav}>
-          <img className="logo"></img>
+          <img src="/images/Logocase.png" className="logo"></img>
         </nav>
         <h1 className={styles.boldtext}>Casestudy</h1>
         <div className={styles.container_case}>
@@ -24,8 +24,8 @@ const Casestudy = () => {
             </p>
           </div>
           <div className={styles.container_imgs}>
-            <img src="" />
-            <img src="" />
+            <img src="/images/casestudy1.png" />
+            <img src="/images/casestudy2.png" />
           </div>
         </div>
       </section>
