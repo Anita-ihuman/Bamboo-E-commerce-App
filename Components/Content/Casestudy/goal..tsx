@@ -6,13 +6,13 @@ import styles from './styles.module.css'
 const Goal = () => {
   return (
     <>
-           <section className={styles.section}>
+      <section className={styles.section_goal}>
         <nav className={styles.nav}>
           <img className="logo"></img>
         </nav>
         <h1 className={styles.boldtext}>goal</h1>
-        <div className={styles.container}>
-          <div className={styles.container_textleft}>
+        <div className={styles.container_goal}>
+          <div className={styles.container_goal_textleft}>
             <h3>SALE SOLUTION</h3>
             <p>
               The Bamboo E-commerce site provide a digital space were digital transaction can take
@@ -20,7 +20,7 @@ const Goal = () => {
             </p>
           </div>
           <br />
-          <div className={styles.container_texright}>
+          <div className={styles.container_goal_texright}>
             <h3>PRODUCT HUB</h3>
             <p>
               The Platform provide a single source of truth for all all things furniture to

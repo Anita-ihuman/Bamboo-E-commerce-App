@@ -6,12 +6,12 @@ import Masonry from 'react-masonry-css'
 const Casestudy = () => {
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.section_case}>
         <nav className={styles.nav}>
           <img className="logo"></img>
         </nav>
         <h1 className={styles.boldtext}>Casestudy</h1>
-        <div className={styles.container}>
+        <div className={styles.container_case}>
           <div className={styles.container_text}>
             <p>
               Bamboo is a furnitutre company that provide quality product to meet your indoor or
