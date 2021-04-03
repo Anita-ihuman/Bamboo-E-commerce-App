@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from '../../../node_modules/next/link'
 import styles from './Featured.module.css'
+import Masonry from 'react-masonry-css'
 
 const App = () => {
   const [Content, setContent] = useState([
@@ -41,6 +42,12 @@ const App = () => {
       image: '/images/furniture12.png',
     },
   ])
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1,
+  }
 
   return (
     <>
@@ -48,11 +55,11 @@ const App = () => {
         <h2>Featured Product</h2>
         <div className={styles.container}>
           {Content.map((img, index) => (
-            <div key={index} className={styles.slider_content}>
-              <Link href="/">
+           
+              <div key={index} className={styles.slider_content}>
                 <img src={img.image} alt="" className={styles.img} />
-              </Link>
-            </div>
+              </div>
+           
           ))}
         </div>
         <button className={styles.btn}>LOAD MORE</button>

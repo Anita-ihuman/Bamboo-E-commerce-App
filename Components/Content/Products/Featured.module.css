@@ -5,9 +5,10 @@
   padding: 0px;
   gap: 0px;
   margin: 0 50px;
-  position: relative;
-  column-count: 3;
+
+
 }
+
 .btn {
   transition: all 0.5s ease;
   border: none;
