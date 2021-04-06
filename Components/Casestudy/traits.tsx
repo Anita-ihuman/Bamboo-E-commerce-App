@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Link from '../../../node_modules/next/link'
+import Link from 'next/link'
 import styles from './styles.module.css'
 import Masonry from 'react-masonry-css'
 
