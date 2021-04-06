@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Home from '../Components/Intro/Home'
 import Featured from '../Components/Products/Featured'
+import Casestudy from '../Components/Casestudy/Casestude'
 // import Bamboo from '../Components/Content/Products/Bamboo'
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Home />
       <Featured />
       {/* <Bamboo/> */}
+      <Casestudy/>
     </main>
   )
 }

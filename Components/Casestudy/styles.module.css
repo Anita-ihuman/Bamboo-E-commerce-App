@@ -1,30 +1,74 @@
 .container_case{
     display: flex;
+    position: relative;
+    top: -50px;
 }
 .container_goal{
     display: flex;
+    padding: 0 140px;
 }
 .container_trait{}
 .section_trait{
     display: flex;
 }
 .section_goal{
-
+/* background: #40514E; */
+}
+.container_text{
+padding: 130px;
+}
+.container_text p{
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 32px;
+margin: 0;
+color: #000000;
+}
+.container_imgs img{
+    width: 570px;
+height: 47%;
 }
 .section_case{
 
 }
-.nav{
 
+.nav{
+    padding-left: 150px;
+}
+.logo2{
+
+    background-color: red;
+}
+.nav .logo2{
+    padding-top: 5px;
 }
 .boldtext{
-
+position: relative;
+left: 300px;
+top: -60px;
+font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+margin: 0;
+line-height: 107px;
+display: flex;
+align-items: center;
+color: #40514E;
+}
+.boldtext2{
+align-items: center;
+color: #40514E;
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
 font-size: 96px;
-line-height: 145px;
+
 display: flex;
-align-items: center;
-color: #40514E;
+padding-left: 500px;
+}
+.container_goal_text p {
+
 }
