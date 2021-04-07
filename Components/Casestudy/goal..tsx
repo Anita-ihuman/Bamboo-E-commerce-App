@@ -8,12 +8,12 @@ const Goal = () => {
     <>
       <section className={styles.section_goal}>
         <nav className={styles.nav}>
-          <img src="/images/baboo.png" className="logo" />
-          <img src="/images/Casestudylogo.png" className="logo" />
+          <img src="/images/baboo.png" className="logo1" />
+          <img src="/images/Casestudylogo.png" className="logo2" />
         </nav>
-        <h1 className={styles.boldtext}>goal</h1>
+        <h1 className={styles.boldtext2}>goal</h1>
         <div className={styles.container_goal}>
-          <div className={styles.container_goal_textleft}>
+          <div className={styles.container_goal_text}>
             <h3>SALE SOLUTION</h3>
             <p>
               The Bamboo E-commerce site provide a digital space were digital transaction can take
@@ -21,7 +21,7 @@ const Goal = () => {
             </p>
           </div>
           <br />
-          <div className={styles.container_goal_texright}>
+          <div className={styles.container_goal_text}>
             <h3>PRODUCT HUB</h3>
             <p>
               The Platform provide a single source of truth for all all things furniture to

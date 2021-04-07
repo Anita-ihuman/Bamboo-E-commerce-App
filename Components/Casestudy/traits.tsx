@@ -11,9 +11,10 @@ const Trait = () => {
           <img src="/images/baboo.png" className="logo" />
           <img src="/images/Casestudylogo.png" className="logo" />
         </nav>
-        <h1 className={styles.boldtext}>Traits</h1>
+
         <div className={styles.container_trait}>
           <div className={styles.container_trait_text}>
+            <h1 className={styles.boldtext2}>Traits</h1>
             <ul>
               <li>MODERN/CLASSIC</li>
               <li>SIMPLE/GENIUNE</li>

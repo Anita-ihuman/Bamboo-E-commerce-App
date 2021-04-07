@@ -1,74 +1,93 @@
-.container_case{
-    display: flex;
-    position: relative;
-    top: -50px;
+.container_case {
+  display: flex;
+  position: relative;
+  top: -50px;
 }
-.container_goal{
-    display: flex;
-    padding: 0 140px;
+.container_goal {
+  display: flex;
+  padding: 0 140px;
 }
-.container_trait{}
-.section_trait{
-    display: flex;
+.container_trait {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
-.section_goal{
-/* background: #40514E; */
+.section_trait {
 }
-.container_text{
-padding: 130px;
+.section_goal {
+  /* background: #40514E; */
 }
-.container_text p{
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 22px;
-line-height: 32px;
-margin: 0;
-color: #000000;
+.container_text {
+  padding: 130px;
 }
-.container_imgs img{
-    width: 570px;
-height: 47%;
+.container_text p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0;
+  color: #000000;
 }
-.section_case{
+.container_imgs img {
+  width: 570px;
+  height: 47%;
+  object-fit: cover;
+}
+.section_case {
+}
 
+.nav {
+  padding-left: 150px;
 }
-
-.nav{
-    padding-left: 150px;
+.logo2 {
+  background-color: red;
 }
-.logo2{
-
-    background-color: red;
+.nav .logo2 {
+  padding-top: 5px;
 }
-.nav .logo2{
-    padding-top: 5px;
+.boldtext {
+  position: relative;
+  left: 300px;
+  top: -60px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  margin: 0;
+  line-height: 107px;
+  display: flex;
+  align-items: center;
+  color: #40514e;
 }
-.boldtext{
-position: relative;
-left: 300px;
-top: -60px;
-font-family: Merriweather;
-font-style: normal;
-font-weight: bold;
-font-size: 100px;
-margin: 0;
-line-height: 107px;
-display: flex;
-align-items: center;
-color: #40514E;
-}
-.boldtext2{
-align-items: center;
-color: #40514E;
-font-family: Merriweather;
-font-style: normal;
-font-weight: bold;
-font-size: 96px;
-
-display: flex;
-padding-left: 500px;
+.boldtext2 {
+  align-items: center;
+  color: #40514e;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  margin: 0;
+  display: flex;
+  padding-left: 500px;
 }
 .container_goal_text p {
-
+}
+.container_trait_text li {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 74px;
+  text-transform: lowercase;
+  color: #40514e;
+  list-style: none;
+}
+.container_trait_text ul {
+  padding-right: 100px;
+}
+.container_right img {
+  width: 501px;
+  height: 605px;
+  object-fit: cover;
 }
