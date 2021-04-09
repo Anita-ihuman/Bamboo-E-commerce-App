@@ -15,16 +15,19 @@ const Casestudy = () => {
 
         <div className={styles.container_case}>
           <div className={styles.container_text}>
-            <h1 className={styles.boldtext}>Casestudy</h1>
-            <p>
-              Bamboo is a furnitutre company that provide quality product to meet your indoor or
-              outdoor furniture needs.
-            </p>
-            <br />
-            <p>
-              Bamboo e-commerce site is a solution that offer a simple system that organize
-              different product where peoples(families, businesses) can intereact with the product.
-            </p>
+            <h1 className={styles.boldtext}>casestudy</h1>
+            <div className={styles.p}>
+              <p>
+                Bamboo is a furnitutre company that provide quality product to meet your indoor or
+                outdoor furniture needs.
+              </p>
+
+              <p>
+                Bamboo e-commerce site is a solution that offer a simple system that organize
+                different product where peoples(families, businesses) can intereact with the
+                product.
+              </p>
+            </div>
           </div>
           <div className={styles.container_imgs}>
             <img src="/images/casestudy1.png" />
