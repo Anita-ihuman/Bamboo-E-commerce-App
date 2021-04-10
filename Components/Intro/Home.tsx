@@ -20,7 +20,7 @@ const content = [
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
     btn: 'SEE MORE',
-    image: 'https://i.imgur.com/DCdBXcq.jpg',
+    image: '/images/Background.png',
   },
   {
     title: 'INDOORS',
@@ -51,18 +51,18 @@ function Counter() {
               background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
+              height:`900px`
             }}
           >
             <div className={styles.inner}>
               <h3>{item.title}</h3>
-              <h1> {item.big}</h1>
+              <h2> {item.big}</h2>
               <p>{item.description}</p>
               <p>{item.description2}</p>
               <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
               <div className={styles.dot}>
-                {index === x ? ' ● ○  ' : '○  ● '}
-                {'○ '}
+                <img src="/images/dots.png"/>
               </div>
             </div>
           </div>

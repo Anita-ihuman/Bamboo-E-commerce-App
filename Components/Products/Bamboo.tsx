@@ -79,56 +79,63 @@ const App = () => {
     },
   ]
 
-  const [cart, setCart] = useState([])
-  const addToCart = (img) => {
-    console.log('hello earth people')
-    setCart([... cart, img]);
-  }
-
+  // const [cart, setCart] = useState([])
+  // const addToCart = (img) => {
+  //   console.log('hello earth people')
+  //   setCart([... cart, img]);
+  // }
+  const [active, setActive] = useState('chair')
   return (
     <>
       <section className={styles.b_section}>
-        <h2>Bamboo Products</h2>
+        <h3>Bamboo Products</h3>
         <ul className={styles.section_list}>
-          <li onClick={() =>(Chairs)}>CHAIR</li>
-          <li onClick={() =>(Cabinets)}>CABINET</li>
-          <li onClick={() =>(Sofas)}>SOFA</li>
-          <li onClick={() =>(Benches)}>BENCH</li>
+          <li onClick={() => setActive('chair')}>CHAIR</li>
+          <li onClick={() => setActive('cabinet')}>CABINET</li>
+          <li onClick={() => setActive('sofa')}>SOFA</li>
+          <li onClick={() => setActive('bench')}>BENCH</li>
         </ul>
-        <div className={styles.b_container}>
-          {Chairs.map((img, index, product) => (
-            <div key={index} className={styles.item_slider}>
-              <img src={img.image} alt="" className={styles.item_img} />
-              <h3>{}</h3>
-            </div>
-          ))}
-        </div>
-        <div className={styles.b_container}>
-          {Cabinets.map((img, index) => (
-            <div key={index} className={styles.item_slider}>
-              <img src={img.image} alt="" className={styles.item_img} />
-            </div>
-          ))}
-        </div>
-        <div className={styles.b_container}>
-          {Sofas.map((img, index) => (
-            <div key={index} className={styles.item_slider}>
-              <img src={img.image} alt="" className={styles.item_img} />
-            </div>
-          ))}
-        </div>
-        <div className={styles.b_container}>
-          {Benches.map((img, index) => (
-            <div key={index} className={styles.item_slider}>
-              <img src={img.image} alt="" className={styles.item_img} />
-            </div>
-          ))}
-        </div>
-        <button onClick={() => addToCart(img)} className={styles.item_btn}>
-          Add to cart
-        </button>
+        {active === 'chair' && (
+          <div className={styles.b_container}>
+            {Chairs.map((img, index, product) => (
+              <div key={index} className={styles.item_slider}>
+                <img src={img.image} alt="" className={styles.item_img} />
+                <h3>{}</h3>
+              </div>
+            ))}
+          </div>
+        )}
+        {active === 'cabinet' && (
+          <div className={styles.b_container}>
+            {Cabinets.map((img, index) => (
+              <div key={index} className={styles.item_slider}>
+                <img src={img.image} alt="" className={styles.item_img} />
+              </div>
+            ))}
+          </div>
+        )}
+        {active === 'sofa' && (
+          <div className={styles.b_container}>
+            {Sofas.map((img, index) => (
+              <div key={index} className={styles.item_slider}>
+                <img src={img.image} alt="" className={styles.item_img} />
+              </div>
+            ))}
+          </div>
+        )}
+        {active === 'bench' && (
+          <div className={styles.b_container}>
+            {Benches.map((img, index) => (
+              <div key={index} className={styles.item_slider}>
+                <img src={img.image} alt="" className={styles.item_img} />
+              </div>
+            ))}
+          </div>
+        )}
+        {/* <button className={styles.item_btn}>Add to cart</button> */}
         <div className={styles.loader}>
-          <img />
+          <img src="/images/slider_check.png" alt="" className={styles.item_img2} />
+          <img src="/images/slider_meter.png" alt="" className={styles.item_img3} />
         </div>
       </section>
     </>

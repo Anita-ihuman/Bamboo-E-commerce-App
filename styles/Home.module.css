@@ -17,7 +17,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 17px 50px;
-  font-family: Inter;
+font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -29,7 +29,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   margin: 0;
   padding: 0;
   position: relative;
-  top: -90px;
+  top: -200px;
   box-sizing: border-box;
   align-items: center;
 }
@@ -47,14 +47,15 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   cursor: pointer;
 }
 .dot {
+  padding-top: 100px;
   width: 100%;
 }
 #left {
   position: absolute;
-  top: 11%;
+  top: 25%;
   left: 35px;
   transform: translateY(-50);
-  width: 10%;
+  width: 8%;
   height: 80%;
   background: none;
   border: none;
@@ -63,11 +64,11 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
 #right {
   background: none;
   position: absolute;
-  top: 11%;
+  top: 25%;
   border: none;
-  left: 1100px;
+  left: 1130px;
   transform: translateY(50);
-  width: 10%;
+  width: 8%;
   height: 80%;
   outline: none;
   transition: 0.5s;
@@ -85,46 +86,42 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   text-align: center;
   left: 0;
   min-width: 100%;
+  max-width: 100%;
   height: 100vh;
   transition: 0.5s;
 }
 
-.slider_content .inner {
-  padding: 0 50px;
+.inner {
+  padding: 0 40px;
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 47%;
+  top: 54%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-.slider_content .inner button {
+.slider_content, .inner button {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   margin: 30px 0;
   background: #ffb338;
 }
-
-.slider_content .inner h1 {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 42px;
+ .inner h2 {
+font-family: 'Merriweather', sans-serif;
+  font-size: 38px;
   margin: 30px auto;
-  max-width: 840px;
   color: #161616;
-
   line-height: 1;
 }
 
-.slider_content .inner p {
+.slider_content, .inner p {
   color: #070707;
   line-height: 1.5;
-  margin: 2px auto 0px;
+  margin: 0px auto 0px;
   padding: 0 0px;
-  font-family: Inter;
+font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

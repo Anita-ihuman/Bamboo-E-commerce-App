@@ -13,6 +13,8 @@ export default class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
           ></link>
+          <link href="http://fonts.cdnfonts.com/css/merriweather?styles=14569,14567" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet"></link>
           <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300&family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
