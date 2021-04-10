@@ -13,7 +13,7 @@ interface Role3 {
   image: string
   cost: string
 }
-const App = () => {
+const Featured = () => {
   const Role: Role1[] = [
     {
       image: '/images/furniture1.png',
@@ -106,4 +106,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Featured

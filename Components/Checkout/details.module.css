@@ -1,0 +1,21 @@
+ /* Related products */
+.section h2{
+ font-family: 'Merriweather', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 43px;
+line-height: 72px;
+padding-bottom: 40px;
+margin: 0;
+align-items: center;
+color: #000000;
+}
+.firstline{
+  display: flex;
+}
+.slider_content{
+  margin: 20px;
+}
+.img{
+
+}
