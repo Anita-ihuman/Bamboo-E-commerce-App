@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Home from '../Components/Intro/Home'
 import Featured from '../Components/Products/Featured'
 import Casestudy from '../Components/Casestudy/Casestude'
-// import Bamboo from '../Components/Content/Products/Bamboo'
+import Bamboo from '../Components/Products/Bamboo'
 const App = () => {
   return (
     <main className={styles.first}>
@@ -13,8 +13,9 @@ const App = () => {
       </Head>
       <Home />
       <Featured />
-      {/* <Bamboo/> */}
-      <Casestudy/>
+      <Bamboo/>
+      <Casestudy />
+      
     </main>
   )
 }
