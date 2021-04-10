@@ -1,4 +1,7 @@
  /* Related products */
+ .section{
+   text-align: center;
+ }
 .section h2{
  font-family: 'Merriweather', sans-serif;
 font-style: normal;
@@ -15,7 +18,8 @@ color: #000000;
 }
 .slider_content{
   margin: 20px;
+  display: flex;justify-content: space-around;
 }
 .img{
-
+width: 90%;
 }

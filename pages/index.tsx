@@ -4,6 +4,8 @@ import Home from '../Components/Intro/Home'
 import Featured from '../Components/Products/Featured'
 import Casestudy from '../Components/Casestudy/Casestude'
 import Bamboo from '../Components/Products/Bamboo'
+import Item from '../Components/Checkout/Item_details'
+import Related from '../Components/Checkout/related_products'
 const App = () => {
   return (
     <main className={styles.first}>
@@ -15,7 +17,8 @@ const App = () => {
       <Featured />
       <Bamboo/>
       <Casestudy />
-      
+      <Item />
+      <Related/>
     </main>
   )
 }
