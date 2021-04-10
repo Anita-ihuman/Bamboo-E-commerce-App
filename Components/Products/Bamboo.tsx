@@ -8,46 +8,46 @@
 // const App = () => {
 //   const [Chair, setChair] = useState([
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet1.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet2.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet3.png',
 //     },
 //   ])
 //   const [Cabinet, setCabinet] = useState([
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet1.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet2.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet3.png',
 //     },
 //   ])
 //   const [Sofa, setSofa] = useState([
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet1.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet2.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet3.png',
 //     },
 //   ])
 //   const [Bench, setBench] = useState([
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet1.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet2.png',
 //     },
 //     {
-//       image: '/images/furniture1.png',
+//       image: '/images/cabinet3.png',
 //     },
 //   ])
 
@@ -56,9 +56,9 @@
 //       <section className={styles.section}>
 //         <h2>Bamboo Products</h2>
 //         <ul>
-//           <li>CHAIR</li>
-//           <li>CABINET</li>
-//           <li>SOFA</li>
+//           <li onClick={}>CHAIR</li>
+//           <li onClick={}>CABINET</li>
+//           <li onClick={}>SOFA</li>
 //           <li onClick={}>BENCH</li>
 //         </ul>
 //         <div className={styles.container}>

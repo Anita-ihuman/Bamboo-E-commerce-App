@@ -43,9 +43,9 @@ const App = () => {
     },
   ])
   const breakpointColumnsObj = {
-    default: 4,
+    default: 2,
     1100: 3,
-    700: 2,
+    700: 5,
     500: 1,
   }
 
