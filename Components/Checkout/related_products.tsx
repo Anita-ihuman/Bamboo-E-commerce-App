@@ -37,7 +37,6 @@ const Related = () => {
             </div>
           ))}
         </div>
-
       </section>
     </>
   )
