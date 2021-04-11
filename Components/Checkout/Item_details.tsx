@@ -30,8 +30,6 @@ const Related = () => {
   return (
     <>
       <section className={styles.section}>
-        <h2>Related Product</h2>
-
         <div className={styles.firstline}>
           {Detail.map((img, index) => (
             <div key={index} className={styles.content}>

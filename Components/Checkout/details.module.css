@@ -33,7 +33,7 @@
 .content_details {
   text-align: left;
   justify-content: center;
-  width: 38%;
+  width: 39%;
 }
 .content_box h3 {
   font-family: 'Merriweather', sans-serif;
@@ -63,7 +63,7 @@
   color: #181813;
 }
 .content_figure {
-  width: 40%;
+  width: 45%;
 }
 .content_text {
   padding: 0 0px;
@@ -131,7 +131,7 @@
 /* shop details details */
 .content_shop {
   display: flex;
-  padding: 50px 0;
+  padding: 75px 0;
 }
 .content_qty {
   font-family: Inter;
@@ -166,31 +166,31 @@
   letter-spacing: 0.08em;
   color: #181813;
 }
-.imgbold{
-  width: 510px;
+.imgbold {
+  width: 530px;
 }
 .content_share {
-display: flex;
+  display: flex;
 }
-.content_share p{
+.content_share p {
   font-family: Inter;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-align-items: center;
-letter-spacing: 0.05em;
-margin: 4px;
-padding-top: 5px;
-color: #181813;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  margin: 4px;
+  padding-top: 5px;
+  color: #181813;
 }
-.content_contact{
+.content_contact {
   margin: 0px;
   display: flex;
   list-style: none;
   padding-left: 12px;
   text-align: center;
 }
-.content_contact img{
+.content_contact img {
   width: 25%;
   margin: 2px;
   height: 90%;
