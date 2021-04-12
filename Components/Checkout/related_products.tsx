@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './details.module.css'
+import Slide from 'react-reveal/Fade'
 
 interface Role {
   image: string
@@ -9,19 +10,19 @@ interface Role {
 const Related = () => {
   const Role: Role[] = [
     {
-      image: '/images/furniture1.png',
+      image: '/images/product1.png',
       cost: '$19.06',
     },
     {
-      image: '/images/furniture4.png',
+      image: '/images/product2.png',
       cost: '$19.06',
     },
     {
-      image: '/images/furniture7.png',
+      image: '/images/product3.png',
       cost: '$19.06',
     },
     {
-      image: '/images/furniture10.png',
+      image: '/images/product4.png',
       cost: '$19.06',
     },
   ]
@@ -29,14 +30,15 @@ const Related = () => {
     <>
       <section className={styles.section}>
         <h2>Related Product</h2>
-
-        <div className={styles.firstline}>
-          {Role.map((img, index) => (
-            <div key={index} className={styles.slider_content}>
-              <img src={img.image} alt="" className={styles.img} />
-            </div>
-          ))}
-        </div>
+        <Slide left>
+          <div className={styles.firstline}>
+            {Role.map((img, index) => (
+              <div key={index} className={styles.slider_content}>
+                <img src={img.image} alt="" className={styles.img} />
+              </div>
+            ))}
+          </div>
+        </Slide>
       </section>
     </>
   )

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './details.module.css'
 
+
 interface Details {
   src: string
   name: string
@@ -30,7 +31,7 @@ const Related = () => {
   return (
     <>
       <section className={styles.section}>
-        <div className={styles.firstline}>
+        <div className={styles.container}>
           {Detail.map((img, index) => (
             <div key={index} className={styles.content}>
               <div className={styles.content_figure}>
@@ -77,13 +78,14 @@ const Related = () => {
 
                 <div className={styles.content_shop}>
                   <div className={styles.content_qty}>
-                    Qty<button className={styles.content_span}>- 01 +</button>
+                    QTY<button className={styles.content_span}>- 01 +</button>
                   </div>
                   <button className={styles.content_shop_btn}>SHOP NOW</button>
                 </div>
 
                 <div className={styles.content_share}>
                   <p>Share</p>
+                  
                   <div className={styles.content_contact}>
                     <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
 

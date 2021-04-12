@@ -16,16 +16,21 @@
 }
 .firstline {
   display: flex;
+  justify-content: flex-end;
+   margin-left: 100px;
+ 
 }
 .slider_content {
-  margin: 20px;
+ 
   display: flex;
-  overflow: hidden;
-  justify-content: space-around;
+}
+.img{
+  width: 90%;
+  margin-left: 20px;
 }
 .content {
   display: flex;
-  margin: 20px;
+  margin: 0px;
   justify-content: center;
   justify-content: space-evenly;
   width: 100%;
@@ -145,6 +150,7 @@
 .content_span {
   margin-left: 20px;
   background: white;
+   border: 0.5px solid  black;
   border-radius: 40px;
   font-family: Inter;
   font-size: 16px;
@@ -156,6 +162,7 @@
 .content_shop_btn {
   margin-left: 20px;
   background: #ffb338;
+  border: 2px solid  #ffb338;
   border-radius: 40px;
   font-family: Inter;
   font-style: normal;
