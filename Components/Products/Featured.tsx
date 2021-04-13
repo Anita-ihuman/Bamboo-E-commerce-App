@@ -68,9 +68,9 @@ const Featured = () => {
       cost: '$19.06',
     },
   ]
-  const [Content, setContent] = useState([
+  // const [Content, setContent] = useState([
    
-  ])
+  // ])
 
   return (
     <>

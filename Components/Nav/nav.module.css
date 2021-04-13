@@ -6,6 +6,7 @@
   padding: 20px 0;
   position: relative;
   z-index: 30;
+  
 }
 
 .content {
@@ -21,4 +22,46 @@
 }
 .content_shopicon {
   color: white;
+}
+.content_shopicon1{
+    color: white;
+    display: block;
+}
+.content_shopicon1, .fas-times{
+transform: rotate(360deg);
+transition: all 0.2s ease-in-out;
+}
+.content_shopicon1, .fas-bars{
+transform: rotate(180deg);
+transition: all 0.2s ease-in-out;
+}
+.content_menulist{
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+   background: rgba(24, 24, 19, 0.7);
+  left: 150px;
+  top: 91px;
+  margin: 0;
+  padding: 90px 100px;
+}
+.content_menulist li a{
+padding: 30px 5px;
+font-weight: 300px;
+color: white;
+cursor: pointer;
+}
+.content_menulist li {
+text-align: center;
+width: 100%;
+margin-bottom: 40px;
+z-index: -1;
+}
+.content_menulist li a:hover{
+  font-weight: 400px;
+font-size: 20px;
+}
+.content_menulist_close{
+  right: -100%;
+  transition: all 0.5 ease-in-out;
 }
