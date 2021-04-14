@@ -147,3 +147,23 @@ color: #181813;
   left: -40px;
   height: 7px;
 }
+
+@media (max-width:700px){
+  .container1 {
+  display: flex;
+padding: 0 0px;
+}
+.section_list{
+  margin: 0;
+  padding: 0;
+}
+.section_list li{
+  margin: 5px;
+}
+.b_container{
+  margin: 0;
+}
+.item_slider{
+margin: 10px;
+}
+}

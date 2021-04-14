@@ -61,9 +61,9 @@ function Counter() {
               <p>{item.description2}</p>
               <p>{item.description3}</p>
               <button className={styles.btn}>{item.btn}</button>
-              <div className={styles.dot}>
+              {/* <div className={styles.dot}>
                 <img src="/images/dots.png"/>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

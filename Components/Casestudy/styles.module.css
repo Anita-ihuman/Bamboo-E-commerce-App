@@ -160,4 +160,56 @@ font-family: 'Open Sans', sans-serif;
 .nav .logo2 {
   padding-top: 5px;
 }
+@media (max-width:700px){
+  .container_case{
+    flex-wrap: wrap;
+  }
+  .p{
+padding: 0px;
+align-items: center;
+  }
+  .p p{
 
+  }
+  .boldtext{
+    position: relative;
+    left: 0;
+    top: 0px;
+padding: 30px 0;
+        font-size: 70px;
+  }
+  .container_imgs img{
+    width: 100%;
+  }
+  .container_trait{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px;
+  }
+  .container_trait_text ul{
+    padding: 30px 0;
+  }
+  .container_trait_text h1{
+ padding: 0;
+  }
+  .container_goal{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px;
+  }
+  .container_goal_text{
+    padding: 0;
+  }
+  .nav{
+    width: 100%;
+     padding: 0;
+   margin: 10px;
+  }
+
+  .boldtext2{
+    padding: 0;
+
+    color:white ;
+  }
+
+}

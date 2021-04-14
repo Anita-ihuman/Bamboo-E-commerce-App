@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './details.module.css'
 
-
 interface Details {
   src: string
   name: string
@@ -17,7 +16,7 @@ const Related = () => {
   const Detail: Details[] = [
     {
       id: '1',
-      src:  '/images/furniture2.png',
+      src: '/images/furniture2.png',
       name: 'Sona Armless Chair',
       cost: '$400.00',
       description: 'Available : In Stock',
@@ -50,28 +49,18 @@ const Related = () => {
                   <div className={styles.content_color}>
                     <p>Color</p>
                     <form className={styles.content_form}>
-                      <input
-                        type="radio"
-                        name="brown"
-                        value="brown"
-                        className={styles.brown}
-                      ></input>
-                      <input
-                        type="radio"
-                        name="black"
-                        value="black"
-                        className={styles.black}
-                      ></input>
-                      <input type="radio" name="grey" value="grey" className={styles.grey}></input>
+                      <button name="brown" value="brown" className={styles.brown}></button>
+                      <button name="black" value="black" className={styles.black}></button>
+                      <button value="grey" className={styles.grey}></button>
                     </form>
                   </div>
 
                   <div className={styles.content_size}>
                     <p>Size</p>
                     <div className={styles.content_btn}>
-                      <button>XML</button>
-                      <button>S</button>
-                      <button>M</button>
+                      <button className={styles.content_xl}>XL</button>
+                      <button className={styles.content_s}>S</button>
+                      <button className={styles.content_m}>M</button>
                     </div>
                   </div>
                 </div>
@@ -85,7 +74,7 @@ const Related = () => {
 
                 <div className={styles.content_share}>
                   <p>Share</p>
-                  
+
                   <div className={styles.content_contact}>
                     <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
 
