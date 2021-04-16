@@ -97,7 +97,7 @@ const App = () => {
         </ul>
         {active === 'chair' && (
           <div className={styles.b_container}>
-            {Chairs.map((img, index, product) => (
+            {Chairs.map((img, index,) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
                 <h3>{}</h3>

@@ -2,17 +2,16 @@
   display: flex;
   position: relative;
   top: -50px;
-
 }
-.section_case{
-  background: #F5F5F5;
+.section_case {
+  background: #f5f5f5;
 }
-.section_goal{
+.section_goal {
   height: 100vh;
- background: #40514E;
+  background: #40514e;
 }
-.section_trait{
-  background: #F5F5F5;
+.section_trait {
+  background: #f5f5f5;
 }
 .container_goal {
   display: flex;
@@ -35,7 +34,7 @@
   margin: 10px;
 }
 .container_text p {
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -51,7 +50,7 @@ font-family: 'Open Sans', sans-serif;
   position: relative;
   left: 380px;
   top: 70px;
-font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 130px;
@@ -64,7 +63,7 @@ font-family: 'Merriweather', serif;
 .boldtext2 {
   align-items: center;
   color: white;
-font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
@@ -72,7 +71,7 @@ font-family: 'Merriweather', serif;
   display: flex;
   padding-left: 410px;
 }
-.boldtext2_green{
+.boldtext2_green {
   color: #40514e;
   font-family: 'Merriweather', serif;
   font-style: normal;
@@ -93,7 +92,7 @@ font-family: 'Merriweather', serif;
   color: #f5f5f5;
 }
 .container_goal_text h3 {
- font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -104,11 +103,11 @@ font-family: 'Merriweather', serif;
   color: #30e3ca;
 }
 .container_goal_text {
-padding-left: 120px;
+  padding-left: 120px;
   margin: 10px;
 }
 .container_trait_text li {
-font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -129,9 +128,10 @@ font-family: 'Merriweather', serif;
   padding-left: 150px;
   display: flex;
 }
-.nav, .textlogo2 {
- color: #40514E;
-font-family: 'Merriweather', serif;
+.nav,
+.textlogo2 {
+  color: #40514e;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -140,8 +140,8 @@ font-family: 'Merriweather', serif;
   align-items: center;
 }
 .nav h3 {
- color: #40514E;
-font-family: 'Open Sans', sans-serif;
+  color: #40514e;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -154,62 +154,59 @@ font-family: 'Open Sans', sans-serif;
 }
 .nav img {
   object-fit: contain;
- 
 }
 
 .nav .logo2 {
   padding-top: 5px;
 }
-@media (max-width:700px){
-  .container_case{
+@media (max-width: 700px) {
+  .container_case {
     flex-wrap: wrap;
   }
-  .p{
-padding: 0px;
-align-items: center;
+  .p {
+    padding: 0px;
+    align-items: center;
   }
-  .p p{
-
+  .p p {
   }
-  .boldtext{
+  .boldtext {
     position: relative;
     left: 0;
     top: 0px;
-padding: 30px 0;
-        font-size: 70px;
+    padding: 30px 0;
+    font-size: 70px;
   }
-  .container_imgs img{
+  .container_imgs img {
     width: 100%;
   }
-  .container_trait{
+  .container_trait {
     flex-wrap: wrap;
     padding: 0;
     margin: 20px;
   }
-  .container_trait_text ul{
+  .container_trait_text ul {
     padding: 30px 0;
   }
-  .container_trait_text h1{
- padding: 0;
+  .container_trait_text h1 {
+    padding: 0;
   }
-  .container_goal{
+  .container_goal {
     flex-wrap: wrap;
     padding: 0;
     margin: 20px;
   }
-  .container_goal_text{
+  .container_goal_text {
     padding: 0;
   }
-  .nav{
+  .nav {
     width: 100%;
-     padding: 0;
-   margin: 10px;
+    padding: 0;
+    margin: 10px;
   }
 
-  .boldtext2{
+  .boldtext2 {
     padding: 0;
 
-    color:white ;
+    color: white;
   }
-
 }
