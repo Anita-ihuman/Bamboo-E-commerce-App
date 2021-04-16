@@ -69,7 +69,7 @@ const Featured = () => {
     },
   ]
   // const [Content, setContent] = useState([
-   
+
   // ])
 
   return (
