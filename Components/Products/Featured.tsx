@@ -71,6 +71,13 @@ const Featured = () => {
   // const [Content, setContent] = useState([
 
   // ])
+  const [inHover, setHover] = useState(false)
+  const [cart, setCart] = useState([]);
+  
+  const addTocart = (img: Role3) => {
+    console.log('hello anita keep trying!!!')
+    setCart([...cart, img])
+  }
 
   return (
     <>
@@ -80,21 +87,74 @@ const Featured = () => {
           <div className={styles.firstline}>
             {Role.map((img, index) => (
               <div key={index} className={styles.slider_content}>
-                <img src={img.image} alt="" className={styles.img} />
+                <a href="">
+                  <img
+                    src={img.image}
+                    alt=""
+                    className={styles.img}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
+                  />
+                </a>
+
+                {inHover && (
+                  <div className={styles.slider_costbox}>
+                    <h3>{img.cost}</h3>
+                    <a href="" className={styles.cart}>
+                      <img src="/images/back.png" />
+                      <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
           <div className={styles.secondline}>
             {Role2s.map((img, index) => (
               <div key={index} className={styles.slider_content}>
-                <img src={img.image} alt="" className={styles.img} />
+                <a href="">
+                  <img
+                    src={img.image}
+                    alt=""
+                    className={styles.img}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(true)}
+                  />
+                </a>
+
+                {inHover && (
+                  <div className={styles.slider_costbox}>
+                    <h3>{img.cost}</h3>
+                    <a href="" className={styles.cart}>
+                      <img src="/images/back.png" />
+                      <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
           <div className={styles.thirdline}>
             {Role3s.map((img, index) => (
               <div key={index} className={styles.slider_content}>
-                <img src={img.image} alt="" className={styles.img} />
+                <a href="">
+                  <img
+                    src={img.image}
+                    alt=""
+                    className={styles.img}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(true)}
+                  />
+                </a>
+                {inHover && (
+                  <div className={styles.slider_costbox}>
+                    <h3>{img.cost}</h3>
+                    <a href="" className={styles.cart} onClick={() => addTocart(img)}>
+                      <img src="/images/back.png" />
+                      <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>

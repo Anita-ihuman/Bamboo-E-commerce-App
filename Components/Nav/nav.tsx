@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 import styles from './nav.module.css'
 import MenuList from './interfaces'
@@ -8,12 +8,14 @@ import MenuList from './interfaces'
 //   url: string
 // }
 
-const Navbar =() => {
+const Navbar = () => {
   const [click, setClick] = useState(false)
+
 
   const handleClick = () => {
     setClick(!click)
   }
+
   return (
     <nav className={styles.nav}>
       <section className={styles.content}>
@@ -26,7 +28,7 @@ const Navbar =() => {
         <div className={styles.content_logo}>
           <img src="/images/Logo.png" />
         </div>
-        <ul className={ styles.content_menulist }>
+        <ul className={styles.content_menulist}>
           <li>
             <a>Home</a>
           </li>
@@ -44,7 +46,7 @@ const Navbar =() => {
           <a href="" className={styles.content_shopicon}>
             <i className="fa fa-search fa-2x" aria-hidden="true"></i>
           </a>
-          <a href="" className={styles.content_shopicon}>
+          <a href="" className={styles.content_shopicon} >
             <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
           </a>
         </div>

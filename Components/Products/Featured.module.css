@@ -51,11 +51,46 @@
   transition: 0.25s ease-in-out;
 }
 .slider_content:hover img {
-  transform: scale(1.1);
 }
 .slider_content:hover:after {
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.75);
+}
+.slider_costbox {
+  display: flex;
+
+  justify-content: center;
+  position: relative;
+  top: -82px;
+  width: 94%;
+  left: 20px;
+  background: linear-gradient(0deg, #181813 0%, rgba(24, 24, 19, 0) 174.29%);
+  border-radius: 0px 0px 10px 10px;
+}
+.slider_costbox h3 {
+  font-family: Jacques Francois;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  align-items: center;
+  text-align: right;
+  color: #ffffff;
+}
+.cart img{
+  position: relative;
+  left: 90px;
+  top: 20px;
+  text-align: right;
+ 
+}
+.cart i{
+   color: #f7f7f7;
+   position: relative;
+  left: 59px;
+  top: 5px;
+}
+
+.slider_costbox:hover {
 }
 
 /* Bamboo component */
