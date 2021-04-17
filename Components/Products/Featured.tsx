@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Featured.module.css'
-
+import items from '../../data.json'
 interface Role1 {
   image: string
   cost: string
@@ -74,7 +74,7 @@ const Featured = () => {
   const [inHover, setHover] = useState(false)
   const [cart, setCart] = useState([]);
   
-  const addTocart = (img: Role3) => {
+  const addTocart = (img) => {
     console.log('hello anita keep trying!!!')
     setCart([...cart, img])
   }
