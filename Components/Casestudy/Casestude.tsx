@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
+import React from 'react'
 import styles from './styles.module.css'
-import Masonry from 'react-masonry-css'
 import Goals from './goal.'
 import Traits from './traits'
 
