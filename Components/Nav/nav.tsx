@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { SideBar } from './sidebar'
 import styles from './nav.module.css'
-import { useRouter } from 'next/router'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import Link from 'next/link'
