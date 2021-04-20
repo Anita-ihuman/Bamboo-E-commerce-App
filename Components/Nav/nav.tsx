@@ -32,11 +32,11 @@ const Navbar = () => {
                   <AiIcons.AiOutlineClose />
                 </Link>
               </li>
-              {SideBar.map((item, index) => {
-                ;<li key={index} className={styles.items}>
+              {SideBar.map((item, index) => { 
+                <li key={index} className={styles.items}>
                   <Link href={item.path}>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <p>{item.title}</p>
                   </Link>
                 </li>
               })}
