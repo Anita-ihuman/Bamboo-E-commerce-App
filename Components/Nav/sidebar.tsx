@@ -15,7 +15,7 @@ export const sideBar: Menu[] = [
 
   {
     title: 'Cart',
-    path: '/Checkout/item_details',
+    path: '/Checkout/Item_details',
     icon: <FaIcons.FaCartPlus />,
   },
   {

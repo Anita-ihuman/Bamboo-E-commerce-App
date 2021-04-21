@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'react-animated-slider/build/horizontal.css'
 import 'normalize.css/normalize.css'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 const content = [
   {
