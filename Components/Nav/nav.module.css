@@ -5,10 +5,8 @@
   opacity: 1px;
   padding: 20px 0;
   position: relative;
-  z-index: 30;
-  
+  z-index: 30; 
 }
-
 .content {
   display: flex;
   justify-content: space-around;
@@ -23,9 +21,8 @@
 .content_shopicon {
   color: white;
 }
-.content_shopicon1{
-    color: white;
-    display: block;
+.content_menu{
+margin-left: 30px;
 }
 .content_shopicon1, .fas-times{
 transform: rotate(360deg);
@@ -35,33 +32,56 @@ transition: all 0.2s ease-in-out;
 transform: rotate(180deg);
 transition: all 0.2s ease-in-out;
 }
-.content_menulist{
+.nav_menuitems{
   flex-direction: column;
   list-style: none;
-  position: absolute;
-   background: rgba(24, 24, 19, 0.7);
-  left: 150px;
-  top: 91px;
+  transition: 850ms;
+   background: #060b26;
+   color: white;
+  left: 0px;
+  top: 0px;
   margin: 0;
-  padding: 90px 100px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+width: 250px;
+  /* transform: translate3d(-100vw, 0, 0); */
 }
-.content_menulist li a{
-padding: 30px 5px;
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+}
+.navbar_text a{
+padding: 0px 0px;
+padding-right: 15px;
 font-weight: 300px;
-color: white;
 cursor: pointer;
+width:90% ;
 }
-.content_menulist li {
-text-align: center;
+.navbar_text {
+color: white;
+font-size: 20px;
+cursor: pointer;
+text-align: start;
 width: 100%;
-margin-bottom: 40px;
+height: 60px;
+padding-top: 20px;
 z-index: -1;
 }
-.content_menulist li a:hover{
+.navbar_text li span:hover{
   font-weight: 400px;
-font-size: 20px;
+  background-color: #1a83ff;
+font-size: 22px;
 }
-.content_menulist_close{
+
+.navbar_toggle{
+height: 80px;
+width: 100%;
+display: flex;
+justify-content: start;
+align-items: center;
+}
+/* .content_menulist_close{
   right: -100%;
   transition: all 0.5 ease-in-out;
-}
+} */

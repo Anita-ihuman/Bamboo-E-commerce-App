@@ -8,7 +8,7 @@ interface Menu {
   icon: any
 }
 
-export const SideBar: Menu[] = [
+export const sideBar: Menu[] = [
 
   { title: 'Home', path: '/', icon: <AiIcons.AiFillHome /> },
 
