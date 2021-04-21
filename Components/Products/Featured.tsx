@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Featured.module.css'
-import items from '../../data.json'
-import { useRouter } from 'next/router'
+import Bamboo from '../Products/Bamboo'
 
 interface Role1 {
   image: string
@@ -163,6 +162,7 @@ const Featured = () => {
         </article>
 
         <button className={styles.btn}>LOAD MORE</button>
+        <Bamboo />
       </section>
     </>
   )

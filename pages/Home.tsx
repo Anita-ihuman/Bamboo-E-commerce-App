@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'react-animated-slider/build/horizontal.css'
 import 'normalize.css/normalize.css'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const content = [
@@ -51,7 +52,7 @@ function Counter() {
               background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
-              height:`900px`
+              height: `900px`,
             }}
           >
             <div className={styles.inner}>
@@ -60,7 +61,10 @@ function Counter() {
               <p>{item.description}</p>
               <p>{item.description2}</p>
               <p>{item.description3}</p>
-              <button className={styles.btn}>{item.btn}</button>
+              <Link as="" href="/">
+                <button className={styles.btn}>{item.btn}</button>
+              </Link>
+
               {/* <div className={styles.dot}>
                 <img src="/images/dots.png"/>
               </div> */}

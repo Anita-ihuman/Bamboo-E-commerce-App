@@ -15,6 +15,9 @@
   margin: 0px 200px;
   padding-left: 110px;
 }
+.content_logo:hover{
+  cursor: pointer;
+}
 .content_shop a {
   padding: 0 20px;
 }
@@ -80,6 +83,9 @@ width: 100%;
 display: flex;
 justify-content: start;
 align-items: center;
+}
+.navbar:hover{
+cursor: pointer;
 }
 /* .content_menulist_close{
   right: -100%;

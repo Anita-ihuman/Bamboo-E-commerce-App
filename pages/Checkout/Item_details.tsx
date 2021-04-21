@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './details.module.css'
-
+import Others from '../Checkout/related_products'
 interface Details {
   src: string
   name: string
@@ -87,6 +87,7 @@ const Related = () => {
             </div>
           ))}
         </div>
+        <Others/>
       </section>
     </>
   )

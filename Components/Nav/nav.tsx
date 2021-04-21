@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { sideBar } from './sidebar'
 import styles from './nav.module.css'
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
 
@@ -45,16 +43,23 @@ const Navbar = () => {
               </div>
             )}
             <div className={styles.content_logo}>
-              <img src="/images/Logo.png" />
+              <Link href="/" as="/">
+                <img src="/images/Logo.png" />
+              </Link>
             </div>
 
             <div className={styles.content_shop}>
-              <a href="" className={styles.content_shopicon}>
-                <i className="fa fa-search fa-2x" aria-hidden="true"></i>
-              </a>
-              <a href="" className={styles.content_shopicon}>
-                <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-              </a>
+              <Link href="" as="">
+                <a className={styles.content_shopicon}>
+                  <i className="fa fa-search fa-2x" aria-hidden="true"></i>
+                </a>
+              </Link>
+
+              <Link href="/Cart/cart" as="">
+                <a className={styles.content_shopicon}>
+                  <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                </a>
+              </Link>
             </div>
           </section>
         </nav>
