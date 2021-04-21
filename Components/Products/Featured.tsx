@@ -75,10 +75,10 @@ const Featured = () => {
   const [inHover, setHover] = useState(false)
   const [cart, setCart] = useState([]);
   
-  const addTocart = (img) => {
-    console.log('hello anita keep trying!!!')
-    setCart([...cart, img])
-  }
+  // const addTocart = (img) => {
+  //   console.log('hello anita keep trying!!!')
+  //   setCart([...cart, img])
+  // }
 
   return (
     <>

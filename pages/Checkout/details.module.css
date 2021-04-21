@@ -28,11 +28,13 @@
 }
 .content {
   display: flex;
-  margin: 0px;
+  margin-top: 40px;
   justify-content: center;
   justify-content: space-evenly;
   width: 100%;
+
 }
+
 .content_details {
   text-align: left;
   justify-content: center;
@@ -216,7 +218,15 @@
   color: #181813;
 }
 .imgbold {
-  width: 530px;
+  width:95%;
+}
+.imgnav {
+  width:88%;
+  position: relative;
+  top: -400px;
+}
+.imgnav:hover {
+cursor: pointer;
 }
 .content_share {
   display: flex;

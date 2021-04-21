@@ -29,7 +29,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   margin: 0;
   padding: 0;
   position: relative;
-  top: -200px;
+  top: -140px;
   box-sizing: border-box;
   align-items: center;
 }
@@ -47,16 +47,15 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   cursor: pointer;
 }
 .dot {
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
 }
 #left {
   position: absolute;
-  top: 25%;
-  left: 35px;
+  top: 46%;
+  left: 40px;
   transform: translateY(-50);
-  width: 8%;
-  height: 80%;
+  object-fit: cover;
   background: none;
   border: none;
   outline: none;
@@ -64,12 +63,11 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
 #right {
   background: none;
   position: absolute;
-  top: 25%;
+  top: 46%;
   border: none;
-  left: 1130px;
+  left: 1120px;
   transform: translateY(50);
-  width: 8%;
-  height: 80%;
+  object-fit: cover;
   outline: none;
   transition: 0.5s;
 }
@@ -96,7 +94,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 54%;
+  top: 56%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

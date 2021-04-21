@@ -52,7 +52,8 @@ function Counter() {
               background: `url('${item.image}') 
             no-repeat center center`,
               transform: `translateX(${x}%)`,
-              height: `900px`,
+              height: `750px`,
+              objectFit: `cover`,
             }}
           >
             <div className={styles.inner}>
@@ -65,9 +66,9 @@ function Counter() {
                 <button className={styles.btn}>{item.btn}</button>
               </Link>
 
-              {/* <div className={styles.dot}>
+              <div className={styles.dot}>
                 <img src="/images/dots.png"/>
-              </div> */}
+              </div>
             </div>
           </div>
         ))}

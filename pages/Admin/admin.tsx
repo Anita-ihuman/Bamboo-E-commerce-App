@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-
-const Navbar = () => {
+import styles from './admin.module.css'
+const Admin = () => {
   return (
     <>
-      <h1>this is the admins corner</h1>
+      <div className={styles.container}>
+        <h1>this is the admins corner</h1>
+      </div>
     </>
   )
 }
-export default Navbar
+export default Admin

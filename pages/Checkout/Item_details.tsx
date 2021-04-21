@@ -3,6 +3,7 @@ import styles from './details.module.css'
 import Others from '../Checkout/related_products'
 interface Details {
   src: string
+  navigate:string
   name: string
   cost: string
   description: string
@@ -16,7 +17,8 @@ const Related = () => {
   const Detail: Details[] = [
     {
       id: '1',
-      src: '/images/furniture2.png',
+      src: '/images/product-img.png',
+      navigate: '/images/navigation_small.png',
       name: 'Sona Armless Chair',
       cost: '$400.00',
       description: 'Available : In Stock',
@@ -35,6 +37,7 @@ const Related = () => {
             <div key={index} className={styles.content}>
               <div className={styles.content_figure}>
                 <img src={img.src} alt="" className={styles.imgbold} />
+                <img src={img.navigate} alt="" className={styles.imgnav} />
               </div>
 
               <div className={styles.content_details}>
@@ -87,7 +90,7 @@ const Related = () => {
             </div>
           ))}
         </div>
-        <Others/>
+        <Others />
       </section>
     </>
   )
