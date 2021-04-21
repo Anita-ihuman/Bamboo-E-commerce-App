@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Home from '../Components/Intro/Home'
-import Featured from '../Components/Products/Featured'
-import Casestudy from '../Components/Casestudy/Casestude'
-import Bamboo from '../Components/Products/Bamboo'
-import Item from '../Components/Checkout/Item_details'
-import Related from '../Components/Checkout/related_products'
+import Home from './Home'
+import Featured from '../components/Products/Featured'
+import Casestudy from './Casestudy/Casestude'
+import Bamboo from '../components/Products/Bamboo'
+import Item from './Checkout/Item_details'
+import Related from './Checkout/related_products'
 const App = () => {
   return (
     <main className={styles.first}>

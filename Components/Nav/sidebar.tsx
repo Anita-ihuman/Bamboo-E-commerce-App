@@ -1,5 +1,6 @@
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
+import * as IoIcons from 'react-icons/io'
 // import * as IoIcons  from 'react-icons/io'
 
 interface Menu {
@@ -14,17 +15,17 @@ export const sideBar: Menu[] = [
 
   {
     title: 'Cart',
-    path: '/',
+    path: '/Checkout/item_details',
     icon: <FaIcons.FaCartPlus />,
   },
   {
     title: 'Casestudy',
-    path: '/',
+    path: '/Casestudy/Casestude',
     icon: <AiIcons.AiFillHome />,
   },
   {
     title: 'Admin',
-    path: '/',
-    icon: <AiIcons.AiFillHome />,
+    path: '/Admin/admin',
+    icon: <IoIcons.IoMdHelpCircle />,
   },
 ]

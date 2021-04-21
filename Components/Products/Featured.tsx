@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styles from './Featured.module.css'
 import items from '../../data.json'
+import { useRouter } from 'next/router'
+
 interface Role1 {
   image: string
   cost: string
