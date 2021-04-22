@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './details.module.css'
-import Slide from 'react-reveal/Fade'
+
 
 interface Role {
   image: string
@@ -30,7 +30,7 @@ const Related = () => {
     <>
       <section className={styles.section}>
         <h2>Related Product</h2>
-        <Slide left>
+        <article >
           <div className={styles.firstline}>
             {Role.map((img, index) => (
               <div key={index} className={styles.slider_content}>
@@ -38,7 +38,7 @@ const Related = () => {
               </div>
             ))}
           </div>
-        </Slide>
+        </article>
       </section>
     </>
   )

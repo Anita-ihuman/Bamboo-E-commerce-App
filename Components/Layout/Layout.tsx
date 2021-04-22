@@ -1,5 +1,5 @@
-import Navbar from '../Nav/nav'
-import Footer from '../Footer/Footer'
+import Navbar from '../Nav/nav';
+import Footer from '../Footer/Footer';
 import Head from 'next/head'
 
 interface PropE {

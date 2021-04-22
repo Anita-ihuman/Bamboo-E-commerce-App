@@ -7,8 +7,8 @@ import { IconContext } from 'react-icons'
 
 const Navbar = () => {
 
-  const [showSideBar, setShowSideBar] = useState(false)
- const [num, setNum] = useState(0)
+//   const [, setShowSideBar] = useState(false)
+//  const [num, setNum] = useState(0)
 //  const addNum = () => {
 //    setNum(num + 1)
 //  }
@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
 
             {active === true && (
-              <div className={showSideBar ? 'nav-menu active' : 'nav-menu'}>
+              <div className={'nav-menu'}>
                 <ul className={styles.nav_menuitems}>
                   <li className={styles.navbar_toggle} onClick={() => setActive(false)}>
                     <Link href="#">
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link href="/Cart/cart" as="">
                 <a className={styles.content_shopicon}>
                   <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                  <span className={styles.cart_count}>{num}</span>
+                  <span className={styles.cart_count}>0</span>
                 </a>
               </Link>
             </div>
