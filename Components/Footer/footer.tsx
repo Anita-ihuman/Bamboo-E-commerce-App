@@ -1,13 +1,8 @@
 import React from 'react'
 import styles from './footer.module.css'
 
-interface FooterLink {
-  title: string
-  href: string
-  label: string
-}
 
-export function Footer({}: FooterLink) {
+export function Footer() {
   return (
     <>
       <footer className={styles.footer}>
