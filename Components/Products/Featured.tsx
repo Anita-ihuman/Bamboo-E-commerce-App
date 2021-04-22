@@ -73,12 +73,12 @@ const Featured = () => {
 
   // ])
   const [inHover, setHover] = useState(false)
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
   
-  const addTocart = (img: Role3) => {
-    console.log('hello anita keep trying!!!')
-    setCart([...cart, img])
-  }
+  // const addTocart = (img: Role3) => {
+  //   console.log('hello anita keep trying!!!')
+  //   setCart([...cart, img])
+  // }
 
   return (
     <>
@@ -155,7 +155,7 @@ const Featured = () => {
                       <i
                         className="fa fa-shopping-cart fa-1x"
                         aria-hidden="true"
-                        onClick={() => addTocart(img)}
+                        // onClick={() => addTocart(img)}
                        
                       ></i>
                     </a>

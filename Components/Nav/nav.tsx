@@ -1,26 +1,17 @@
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import { sideBar } from './sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
-import Cart from '../../pages/Cart/cart'
 
-// const Overlay = {
-//  position:" fixed",
-// top: " 0",
-//   height:" 100vh",
-//   width: "100%",
-// background: "rgba(0, 0, 0, 0.4)",
-// zIndex: "500",
-// }
 
 const Navbar = () => {
 
   const [showSideBar, setShowSideBar] = useState(false)
  const [num, setNum] = useState(0)
- const addNum = () => {
-   setNum(num + 1)
- }
+//  const addNum = () => {
+//    setNum(num + 1)
+//  }
   const [active, setActive] = useState(false)
   return (
     <>
