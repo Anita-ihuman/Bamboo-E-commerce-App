@@ -4,6 +4,15 @@ import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
 
+// const Overlay = {
+//  position:" fixed",
+// top: " 0",
+//   height:" 100vh",
+//   width: "100%",
+// background: "rgba(0, 0, 0, 0.4)",
+// zIndex: "500",
+// }
+
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false)
 
@@ -58,6 +67,7 @@ const Navbar = () => {
               <Link href="/Cart/cart" as="">
                 <a className={styles.content_shopicon}>
                   <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                  <span className={styles.cart_count}>0</span>
                 </a>
               </Link>
             </div>

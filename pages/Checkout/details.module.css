@@ -217,6 +217,12 @@
   letter-spacing: 0.08em;
   color: #181813;
 }
+.content_shop_btn:hover{
+  cursor: pointer;
+     transition: all 0.5s ease-in-out;
+     background-color: #181813;
+     color: white;
+}
 .imgbold {
   width:95%;
 }
@@ -242,6 +248,9 @@ cursor: pointer;
   padding-top: 5px;
   color: #181813;
 }
+.content_span span{
+  padding: 0px 5px;
+}
 .content_contact {
   margin: 0px;
   display: flex;
@@ -253,6 +262,15 @@ cursor: pointer;
   width: 25%;
   margin: 2px;
   height: 90%;
+}
+.content_contact img:hover{
+  cursor: pointer;
+}
+/* related products */
+.slider_content img:hover{
+  cursor: pointer;
+   transition: all 0.5s ease-in-out;
+     transform: scale(1.1);
 }
 @media (max-width:700px){
   .section{

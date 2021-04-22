@@ -87,6 +87,17 @@ align-items: center;
 .navbar:hover{
 cursor: pointer;
 }
+.cart_count{
+  position: absolute;
+  bottom: 34px;
+right: 80px;
+  padding: 3px 7px;
+  border-radius: 50px;
+  background-color: #f05454;
+  color: white;
+  font-size: 12px;
+  font-weight: 600px;
+}
 /* .content_menulist_close{
   right: -100%;
   transition: all 0.5 ease-in-out;

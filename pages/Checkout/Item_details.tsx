@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './details.module.css'
 import Others from '../Checkout/related_products'
+import Link from 'next/link'
+
 interface Details {
   src: string
-  navigate:string
+  navigate: string
   name: string
   cost: string
   description: string
@@ -28,7 +30,26 @@ const Related = () => {
       count: 1,
     },
   ]
+  //  slider components
+  const [x, setX] = useState(0)
+  const goLeft = () => {
+    x === 0 ? setX(-100 * (Detail.length - 1)) : setX(x + 100)
+  }
+  const goRight = () => {
+    x === -100 * (Detail.length - 1) ? setX(0) : setX(x - 100)
+  }
 
+  const [num, setNum] = useState(0)
+  const addNum = () => {
+    setNum(num + 1)
+  }
+  const removeNum = () => {
+    if (num > 0) {
+      setNum(num - 1)
+    } else {
+      setNum(0)
+    }
+  }
   return (
     <>
       <section className={styles.section}>
@@ -37,7 +58,8 @@ const Related = () => {
             <div key={index} className={styles.content}>
               <div className={styles.content_figure}>
                 <img src={img.src} alt="" className={styles.imgbold} />
-                <img src={img.navigate} alt="" className={styles.imgnav} />
+
+                <img src={img.navigate} alt="" className={styles.imgnav} onClick={goRight} />
               </div>
 
               <div className={styles.content_details}>
@@ -70,20 +92,32 @@ const Related = () => {
 
                 <div className={styles.content_shop}>
                   <div className={styles.content_qty}>
-                    QTY<button className={styles.content_span}>- 01 +</button>
+                    QTY
+                    <button className={styles.content_span}>
+                      <span onClick={addNum}>+</span>
+                      {num}
+                      <span onClick={removeNum}>-</span>
+                    </button>
                   </div>
-                  <button className={styles.content_shop_btn}>SHOP NOW</button>
+                  <Link href="/Cart/cart" as="">
+                    <button className={styles.content_shop_btn}>SHOP NOW</button>
+                  </Link>
                 </div>
 
                 <div className={styles.content_share}>
                   <p>Share</p>
 
                   <div className={styles.content_contact}>
-                    <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
+                    <Link href="" as="">
+                      <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
+                    </Link>
 
-                    <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png" />
-
-                    <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" />
+                    <Link href="" as="">
+                      <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png" />
+                    </Link>
+                    <Link href="" as="">
+                      <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" />
+                    </Link>
                   </div>
                 </div>
               </div>
