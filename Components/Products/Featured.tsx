@@ -75,10 +75,10 @@ const Featured = () => {
   const [inHover, setHover] = useState(false)
   const [cart, setCart] = useState([]);
   
-  // const addTocart = (img) => {
-  //   console.log('hello anita keep trying!!!')
-  //   setCart([...cart, img])
-  // }
+  const addTocart = (img: Role3) => {
+    console.log('hello anita keep trying!!!')
+    setCart([...cart, img])
+  }
 
   return (
     <>
@@ -150,9 +150,14 @@ const Featured = () => {
                 {inHover && (
                   <div className={styles.slider_costbox}>
                     <h3>{img.cost}</h3>
-                    <a href="" className={styles.cart} onClick={() => addTocart(img)}>
+                    <a href="" className={styles.cart}>
                       <img src="/images/back.png" />
-                      <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                      <i
+                        className="fa fa-shopping-cart fa-1x"
+                        aria-hidden="true"
+                        onClick={() => addTocart(img)}
+                       
+                      ></i>
                     </a>
                   </div>
                 )}

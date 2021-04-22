@@ -3,6 +3,7 @@ import { sideBar } from './sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
+import Cart from '../../pages/Cart/cart'
 
 // const Overlay = {
 //  position:" fixed",
@@ -14,8 +15,12 @@ import { IconContext } from 'react-icons'
 // }
 
 const Navbar = () => {
-  const [showSideBar, setShowSideBar] = useState(false)
 
+  const [showSideBar, setShowSideBar] = useState(false)
+ const [num, setNum] = useState(0)
+ const addNum = () => {
+   setNum(num + 1)
+ }
   const [active, setActive] = useState(false)
   return (
     <>
@@ -67,7 +72,7 @@ const Navbar = () => {
               <Link href="/Cart/cart" as="">
                 <a className={styles.content_shopicon}>
                   <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                  <span className={styles.cart_count}>0</span>
+                  <span className={styles.cart_count}>{num}</span>
                 </a>
               </Link>
             </div>

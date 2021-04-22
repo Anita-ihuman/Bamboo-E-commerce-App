@@ -31,13 +31,13 @@ const Related = () => {
     },
   ]
   //  slider components
-  const [x, setX] = useState(0)
-  const goLeft = () => {
-    x === 0 ? setX(-100 * (Detail.length - 1)) : setX(x + 100)
-  }
-  const goRight = () => {
-    x === -100 * (Detail.length - 1) ? setX(0) : setX(x - 100)
-  }
+  // const [x, setX] = useState(0)
+  // const goLeft = () => {
+  //   x === 0 ? setX(-100 * (Detail.length - 1)) : setX(x + 100)
+  // }
+  // const goRight = () => {
+  //   x === -100 * (Detail.length - 1) ? setX(0) : setX(x - 100)
+  // }
 
   const [num, setNum] = useState(0)
   const addNum = () => {
@@ -59,7 +59,7 @@ const Related = () => {
               <div className={styles.content_figure}>
                 <img src={img.src} alt="" className={styles.imgbold} />
 
-                <img src={img.navigate} alt="" className={styles.imgnav} onClick={goRight} />
+                <img src={img.navigate} alt="" className={styles.imgnav} />
               </div>
 
               <div className={styles.content_details}>
