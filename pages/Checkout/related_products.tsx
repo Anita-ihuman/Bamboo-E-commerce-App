@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './details.module.css'
-// import { MotionAnimate } from 'react-motion-animate'
+
 
 interface Role {
   image: string
@@ -26,21 +26,12 @@ const Related = () => {
       cost: '$19.06',
     },
   ]
-  // const scrollFadeIn = {
-  //   hidden: {
-  //     opacity: 0,
-  //     y: 40,
-  //   },
-  //   show: {
-  //     opacity: 1,
-  //     y: 0,
-  //   },
-  // }
+
   return (
     <>
       <section className={styles.section}>
         <h2>Related Product</h2>
-        <article >
+        <article>
           <div className={styles.firstline}>
             {Role.map((img, index) => (
               <div key={index} className={styles.slider_content}>
