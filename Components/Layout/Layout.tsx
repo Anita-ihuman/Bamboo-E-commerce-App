@@ -1,4 +1,5 @@
 import Navbar from '../Nav/nav';
+import Footer from '../Footer/Footer';
 import Head from 'next/head'
 
 interface PropE {
@@ -13,6 +14,7 @@ const Layout = ({ children }: PropE) => {
       </Head>
       <Navbar />
       {children}
+      <Footer/>
     </div>
   )
 }
