@@ -5,7 +5,7 @@
   opacity: 1px;
   padding: 20px 0;
   position: relative;
-  z-index: 30; 
+  z-index: 30;
 }
 .content {
   display: flex;
@@ -15,7 +15,7 @@
   margin: 0px 200px;
   padding-left: 110px;
 }
-.content_logo:hover{
+.content_logo:hover {
   cursor: pointer;
 }
 .content_shop a {
@@ -24,73 +24,75 @@
 .content_shopicon {
   color: white;
 }
-.content_menu{
-margin-left: 30px;
+.content_menu {
+  margin-left: 30px;
 }
-.content_shopicon1, .fas-times{
-transform: rotate(360deg);
-transition: all 0.2s ease-in-out;
+.content_shopicon1,
+.fas-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
 }
-.content_shopicon1, .fas-bars{
-transform: rotate(180deg);
-transition: all 0.2s ease-in-out;
+.content_shopicon1,
+.fas-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
 }
-.nav_menuitems{
+.nav_menuitems {
   flex-direction: column;
   list-style: none;
   transition: 850ms;
-   background: #060b26;
-   color: white;
+  background: #060b26;
+  color: white;
   left: 0px;
   top: 0px;
   margin: 0;
   display: flex;
   justify-content: center;
   position: fixed;
-width: 250px;
+  width: 250px;
   /* transform: translate3d(-100vw, 0, 0); */
 }
-.nav-menu.active{
+.nav-menu.active {
   left: 0;
   transition: 350ms;
 }
-.navbar_text a{
-padding: 0px 0px;
-padding-right: 15px;
-font-weight: 300px;
-cursor: pointer;
-width:90% ;
+.navbar_text a {
+  padding: 0px 0px;
+  padding-right: 15px;
+  font-weight: 300px;
+  cursor: pointer;
+  width: 90%;
 }
 .navbar_text {
-color: white;
-font-size: 20px;
-cursor: pointer;
-text-align: start;
-width: 100%;
-height: 60px;
-padding-top: 20px;
-z-index: -1;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: start;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  z-index: -1;
 }
-.navbar_text li span:hover{
+.navbar_text li span:hover {
   font-weight: 400px;
   background-color: #1a83ff;
-font-size: 22px;
+  font-size: 22px;
 }
 
-.navbar_toggle{
-height: 80px;
-width: 100%;
-display: flex;
-justify-content: start;
-align-items: center;
+.navbar_toggle {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
-.navbar:hover{
-cursor: pointer;
+.navbar:hover {
+  cursor: pointer;
 }
-.cart_count{
+.cart_count {
   position: absolute;
   bottom: 34px;
-right: 80px;
+  right: 80px;
   padding: 3px 7px;
   border-radius: 50px;
   background-color: #f05454;

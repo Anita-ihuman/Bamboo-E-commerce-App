@@ -3,12 +3,13 @@
 }
 .container1 {
   display: flex;
-  padding: 0 70px;
+}
+.firstline {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.secondline {
-  padding-top: 50px;
-}
+
 .section h2 {
   font-family: 'Merriweather', sans-serif;
   font-style: normal;
@@ -43,13 +44,13 @@
 }
 
 .img {
-  margin: 20px;
   width: 94%;
   object-fit: cover;
   max-block-size: 100%;
   border-radius: 10px;
+  margin: 10px;
 }
-.slider_content:hover img {
+.img:hover {
   border: 3px solid #ffb338;
 }
 
@@ -59,7 +60,7 @@
   position: relative;
   top: -95px;
   width: 94%;
-  left: 22px;
+  left: 14px;
   background: linear-gradient(0deg, #181813 0%, rgba(24, 24, 19, 0) 174.29%);
   border-radius: 0px 0px 10px 10px;
 }
@@ -140,7 +141,7 @@
 .item_img:hover {
   transform: scale(1.1);
   cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .item_slider {
   display: flex;

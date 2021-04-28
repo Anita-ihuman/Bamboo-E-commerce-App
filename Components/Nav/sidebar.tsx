@@ -10,7 +10,6 @@ interface Menu {
 }
 
 export const sideBar: Menu[] = [
-
   { title: 'Home', path: '/', icon: <AiIcons.AiFillHome /> },
 
   {
