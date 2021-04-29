@@ -1,5 +1,5 @@
-import Navbar from '../Nav/nav';
-import Footer from '../Footer/Footer';
+import Navbar from '../Nav/nav'
+import Footer from '../Footer/footer'
 import Head from 'next/head'
 
 interface PropE {
@@ -14,7 +14,7 @@ const Layout = ({ children }: PropE) => {
       </Head>
       <Navbar />
       {children}
-      <Footer/>
+      <Footer />
     </div>
   )
 }
