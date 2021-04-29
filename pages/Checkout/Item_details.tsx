@@ -30,14 +30,6 @@ const Related = () => {
       count: 1,
     },
   ]
-  //  slider components
-  // const [x, setX] = useState(0)
-  // const goLeft = () => {
-  //   x === 0 ? setX(-100 * (Detail.length - 1)) : setX(x + 100)
-  // }
-  // const goRight = () => {
-  //   x === -100 * (Detail.length - 1) ? setX(0) : setX(x - 100)
-  // }
 
   const [num, setNum] = useState(0)
   const addNum = () => {
@@ -50,6 +42,14 @@ const Related = () => {
       setNum(0)
     }
   }
+  //  const [cart, setCart] = useState([])
+
+  //  const addTocart = (img) => {
+  //    console.log('hello anita keep trying!!!')
+  //    setCart([...cart, img])
+
+  // onClick={() => addTocart(img)}
+  //  }
   return (
     <>
       <section className={styles.section}>

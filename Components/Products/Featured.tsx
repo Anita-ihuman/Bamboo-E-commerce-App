@@ -2,21 +2,28 @@ import React, { useState } from 'react'
 import styles from './Featured.module.css'
 import Bamboo from '../Products/Bamboo'
 import { Role } from './items'
+import Link from 'next/link'
+
 
 const Featured = () => {
   const [inHover, setHover] = useState(false)
-  // const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([])
 
-  // const addTocart = (img: Role) => {
-  //   console.log('hello anita keep trying!!!')
-  //   setCart([...cart, img])
-  // onClick={() => addTocart(img)}
-  // }
+  const addTocart = (img) => {
+    console.log('hello anita keep trying!!!')
+    setCart([...cart, img])
+  }
 
   return (
     <>
       <section className={styles.section}>
         <h2>Featured Product</h2>
+        <Link href="/Cart/cart" as="">
+          <a className={styles.content_shopicon}>
+            <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <span className={styles.cart_count}>({cart.length})</span>
+          </a>
+        </Link>
         <article className={styles.container1}>
           <div className={styles.firstline}>
             {Role.map((img, index) => (
@@ -34,10 +41,10 @@ const Featured = () => {
                 {inHover && (
                   <div className={styles.slider_costbox}>
                     <h3>{img.cost}</h3>
-                    <a href="" className={styles.cart}>
+                    <figure className={styles.cart} onClick={() => addTocart(img)}>
                       <img src="/images/back.png" />
                       <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
-                    </a>
+                    </figure>
                   </div>
                 )}
               </div>

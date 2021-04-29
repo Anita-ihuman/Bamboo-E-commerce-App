@@ -3,6 +3,7 @@ import { sideBar } from './sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
+import cart from '../Products/Featured'
 
 const Navbar = () => {
   // const [isToggle, setToggle] = useState(false)
@@ -61,11 +62,8 @@ const Navbar = () => {
 
               <Link href="/Cart/cart" as="">
                 <a className={styles.content_shopicon}>
-                  <i className="fa fa-shopping-cart fa-2x" aria-hidden="true">
-                    {/* isToggle={isToggle}
-                    setToggle={setToggle} */}
-                  </i>
-                  <span className={styles.cart_count}>0</span>
+                  <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                  <span className={styles.cart_count}>({cart.length})</span>
                 </a>
               </Link>
             </div>

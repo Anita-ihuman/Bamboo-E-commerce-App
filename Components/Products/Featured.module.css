@@ -76,14 +76,14 @@
 .cart img {
   position: relative;
   left: 90px;
-  top: 20px;
+  top: 0px;
   text-align: right;
 }
 .cart i {
   color: #f7f7f7;
   position: relative;
   left: 58px;
-  top: 5px;
+  top: -15px;
 }
 
 /* Bamboo component */
