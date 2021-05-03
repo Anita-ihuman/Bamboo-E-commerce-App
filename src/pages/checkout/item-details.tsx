@@ -99,7 +99,7 @@ const Related = () => {
                       <span onClick={removeNum}>-</span>
                     </button>
                   </div>
-                  <Link href="/Cart/cart" as="">
+                  <Link href="/cart/cart" as="">
                     <button className={styles.content_shop_btn}>SHOP NOW</button>
                   </Link>
                 </div>

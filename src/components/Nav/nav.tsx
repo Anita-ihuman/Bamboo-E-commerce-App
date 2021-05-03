@@ -61,7 +61,7 @@ const Navbar = () => {
                 </a>
               </Link>
 
-              <Link href="/Cart/cart" as="">
+              <Link href="/cart/cart" as="">
                 <a className={styles.content_shopicon}>
                   <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                   <span className={styles.cart_count}>({cart.length})</span>
