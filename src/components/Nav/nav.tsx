@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { sideBar } from './sidebar'
+import { sideBar } from './Sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
