@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Featured.module.css'
-import Bamboo from '../Products/Bamboo'
+import Bamboo from './Bamboo'
 import { Role } from './items'
 // import Link from 'next/link'
 

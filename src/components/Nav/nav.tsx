@@ -13,6 +13,7 @@ const Navbar = () => {
   //  const addNum = () => {
   //    setNum(num + 1)
   //  }
+
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>

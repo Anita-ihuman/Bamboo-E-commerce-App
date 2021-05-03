@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './details.module.css'
-import Others from '../Checkout/related_products'
+import Others from './related-products'
 import Link from 'next/link'
 
 interface Details {

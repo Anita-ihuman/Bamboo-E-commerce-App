@@ -14,17 +14,17 @@ export const sideBar: Menu[] = [
 
   {
     title: 'Cart',
-    path: '/Checkout/Item_details',
+    path: '/checkout/item-details',
     icon: <FaIcons.FaCartPlus />,
   },
   {
     title: 'Casestudy',
-    path: '/Casestudy/Casestude',
+    path: '/casestudy/casestudy',
     icon: <AiIcons.AiFillHome />,
   },
   {
     title: 'Admin',
-    path: '/Admin/admin',
+    path: '/admin/admin',
     icon: <IoIcons.IoMdHelpCircle />,
   },
 ]

@@ -1,8 +1,7 @@
 import Layout from '../components/Layout/Layout'
 
-
 interface ElementProps {
-  Component: string & any;
+  Component: string & any
   pageProps: string
 }
 
@@ -14,4 +13,4 @@ export function Element({ pageProps, Component }: ElementProps) {
   )
 }
 
-export default  Element
+export default Element
