@@ -110,6 +110,7 @@ const App = () => {
             {Cabinets.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
+                <h3>{}</h3>
               </div>
             ))}
           </div>
@@ -119,6 +120,7 @@ const App = () => {
             {Sofas.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
+                <h3>{}</h3>
               </div>
             ))}
           </div>
@@ -128,6 +130,7 @@ const App = () => {
             {Benches.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
+                <h3>{}</h3>
               </div>
             ))}
           </div>

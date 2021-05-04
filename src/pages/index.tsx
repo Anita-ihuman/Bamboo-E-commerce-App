@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Home from './Home'
+import Home from './home'
 import Featured from '../components/Products/Featured'
 
 const App = () => {
   return (
     <main className={styles.first}>
       <Head>
-        <title>Create Next App</title>
+        <title>Bamboo Cart</title>
         <link rel="icon" href="/Logo2.png" />
       </Head>
       <Home />
