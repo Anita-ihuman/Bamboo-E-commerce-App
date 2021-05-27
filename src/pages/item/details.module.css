@@ -25,6 +25,7 @@
 .img {
   width: 90%;
   margin-left: 20px;
+  cursor: pointer;
 }
 .content {
   display: flex;
@@ -32,7 +33,6 @@
   justify-content: center;
   justify-content: space-evenly;
   width: 100%;
-
 }
 
 .content_details {
@@ -84,13 +84,18 @@
   display: flex;
   justify-content: left;
   padding-top: 10px;
-
 }
 .content_color {
   padding-right: 50px;
+
 }
+
 .content_size {
   padding-left: 110px;
+  cursor: pointer;
+}
+.content_size:hover{
+    cursor: pointer;
 }
 .content_color p {
   font-family: Inter;
@@ -121,9 +126,11 @@
   padding: 8px;
   border-radius: 100%;
   border: 2px solid #764131;
-}.brown:hover{
+}
+.brown:hover {
   transition: all 0.5s ease-in-out;
   border: 1px solid white;
+    cursor: pointer;
 }
 .black {
   margin: 3px;
@@ -132,9 +139,10 @@
   background: #404040;
   border: 2px solid #404040;
 }
-.black:hover{
+.black:hover {
   transition: all 0.5s ease-in-out;
   border: 1px solid white;
+    cursor: pointer;
 }
 .grey {
   margin: 3px;
@@ -143,9 +151,10 @@
   padding: 8px;
   border-radius: 100%;
 }
-.grey:hover{
+.grey:hover {
   transition: all 0.5s ease-in;
   border: 1px solid white;
+    cursor: pointer;
 }
 
 .content_btn button {
@@ -158,8 +167,15 @@
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
-   padding: 3px 5px;
+  padding: 3px 5px;
 }
+.content_xl:hover{
+    cursor: pointer;
+}
+.content_s, .content_m,.content_xl,.content_span :hover{
+    cursor: pointer;
+}
+
 .content_s {
   background-color: #ffb338;
   border: 2px solid #ffb338;
@@ -217,22 +233,22 @@
   letter-spacing: 0.08em;
   color: #181813;
 }
-.content_shop_btn:hover{
+.content_shop_btn:hover {
   cursor: pointer;
-     transition: all 0.5s ease-in-out;
-     background-color: #181813;
-     color: white;
+  transition: all 0.5s ease-in-out;
+  background-color: #181813;
+  color: white;
 }
 .imgbold {
-  width:95%;
+  width: 95%;
 }
 .imgnav {
-  width:88%;
+  width: 88%;
   position: relative;
   top: -400px;
 }
 .imgnav:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 .content_share {
   display: flex;
@@ -248,7 +264,7 @@ cursor: pointer;
   padding-top: 5px;
   color: #181813;
 }
-.content_span span{
+.content_span span {
   padding: 0px 5px;
 }
 .content_contact {
@@ -263,46 +279,46 @@ cursor: pointer;
   margin: 2px;
   height: 90%;
 }
-.content_contact img:hover{
+.content_contact img:hover {
   cursor: pointer;
 }
 /* related products */
-.slider_content img:hover{
+.slider_content img:hover {
   cursor: pointer;
-   transition: all 0.5s ease-in-out;
-     transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
 }
-@media (max-width:700px){
-  .section{
+@media (max-width: 700px) {
+  .section {
     margin: 10px;
   }
-.content_details{
-  width: 100%;
-}
-.content_figure {
-  width: 100%;
-}
-.imgbold {
- width: 100%;
-}
-.content{
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.content_shop{
-  flex-wrap: wrap; 
-}
-.content_span{
-  padding: 5px 10px;
-}
-.content_shop_btn{
-  padding: 10px 20px;
-}
+  .content_details {
+    width: 100%;
+  }
+  .content_figure {
+    width: 100%;
+  }
+  .imgbold {
+    width: 100%;
+  }
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content_shop {
+    flex-wrap: wrap;
+  }
+  .content_span {
+    padding: 5px 10px;
+  }
+  .content_shop_btn {
+    padding: 10px 20px;
+  }
 
-.firstline{
-  margin: 0;
-}
-.slider_content img{
-  margin: 0;
-}
+  .firstline {
+    margin: 0;
+  }
+  .slider_content img {
+    margin: 0;
+  }
 }
