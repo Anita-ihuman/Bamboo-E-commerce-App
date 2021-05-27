@@ -3,7 +3,7 @@ import { sideBar } from './Sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
-import cart from '../Products/Featured'
+import cart from '../../pages/Products/Featured'
 
 const Navbar = () => {
   // const [isToggle, setToggle] = useState(false)

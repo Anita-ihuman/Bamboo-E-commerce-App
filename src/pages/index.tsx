@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Home from './home'
-import Featured from '../components/Products/Featured'
+import Featured from './Products/Featured'
 
 const App = () => {
   return (

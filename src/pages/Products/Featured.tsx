@@ -30,7 +30,7 @@ const Featured = () => {
           <div className={styles.firstline}>
             {Role.map((img, index) => (
               <div key={index} className={styles.slider_content}>
-                <a href="">
+                <div className={styles.figure}>
                   <img
                     src={img.image}
                     alt="item images"
@@ -38,17 +38,16 @@ const Featured = () => {
                     onMouseEnter={() => setHover(true)}
                     onMouseLeave={() => setHover(true)}
                   />
-                </a>
-
-                {inHover && (
-                  <div className={styles.slider_costbox}>
-                    <h3>{img.cost}</h3>
-                    <figure className={styles.cart} >
-                      <img src="/images/back.png" />
-                      <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
-                    </figure>
-                  </div>
-                )}
+                  {inHover && (
+                    <div className={styles.slider_costbox}>
+                      <h3>{img.cost}</h3>
+                      <figure className={styles.cart}>
+                        <img src="/images/back.png" />
+                        <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                      </figure>
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>

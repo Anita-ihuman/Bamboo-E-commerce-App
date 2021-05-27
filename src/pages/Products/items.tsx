@@ -11,35 +11,19 @@ interface Role1 {
       cost: '$19.06',
     },
     {
+      image: '/images/furniture 2.png',
+      cost: '$19.06',
+    },
+    {
+      image: '/images/furniture3.png',
+      cost: '$19.06',
+    },
+    {
       image: '/images/furniture4.png',
       cost: '$19.06',
     },
     {
-      image: '/images/furniture7.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/furniture10.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/furniture2.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/furniture5.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/furniture8.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/furniture11.png',
-      cost: '$19.06',
-    },
-     {
-      image: '/images/furniture3.png',
+      image: '/images/furniture 5.png',
       cost: '$19.06',
     },
     {
@@ -47,7 +31,23 @@ interface Role1 {
       cost: '$19.06',
     },
     {
+      image: '/images/furniture7.png',
+      cost: '$19.06',
+    },
+    {
+      image: '/images/furniture 8.png',
+      cost: '$19.06',
+    },
+     {
       image: '/images/furniture9.png',
+      cost: '$19.06',
+    },
+    {
+      image: '/images/furniture10.png',
+      cost: '$19.06',
+    },
+    {
+      image: '/images/furniture 11.png',
       cost: '$19.06',
     },
     {
