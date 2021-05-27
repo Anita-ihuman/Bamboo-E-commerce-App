@@ -23,3 +23,15 @@ export interface furnitureContextProp {
 export interface FurnitureProp {
   children: string & any
 }
+
+export interface Item {
+  src: string
+  navigate: string
+  name: string
+  cost: string
+  description: string
+  details: string
+  id: string
+  color: string
+  count: number
+}
