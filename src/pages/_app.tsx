@@ -1,5 +1,5 @@
 import Layout from '../components/Layout/Layout'
-
+import { FurnitureProvider } from './itemContext'
 interface ElementProps {
   Component: string & any
   pageProps: string
@@ -7,9 +7,11 @@ interface ElementProps {
 
 export function Element({ pageProps, Component }: ElementProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <FurnitureProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </FurnitureProvider>
   )
 }
 
