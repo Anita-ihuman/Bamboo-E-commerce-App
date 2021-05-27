@@ -1,18 +1,16 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { sideBar } from './Sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
-import cart from '../../pages/Products/Featured'
+import { furnitureContext } from '../../pages/itemContext'
+
 
 const Navbar = () => {
-  // const [isToggle, setToggle] = useState(false)
+
   const [active, setActive] = useState(false)
-  //   const [, setShowSideBar] = useState(false)
-  //  const [num, setNum] = useState(0)
-  //  const addNum = () => {
-  //    setNum(num + 1)
-  //  }
+  console.log("hello anita ihuman")
+  const { count } = useContext(furnitureContext)
 
   return (
     <>
@@ -64,7 +62,7 @@ const Navbar = () => {
               <Link href="/cart/cart" as="">
                 <a className={styles.content_shopicon}>
                   <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                  <span className={styles.cart_count}>({cart.length})</span>
+                  <span className={styles.cart_count}> {count}</span>
                 </a>
               </Link>
             </div>

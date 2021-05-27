@@ -5,14 +5,17 @@ import Featured from './Products/Featured'
 
 const App = () => {
   return (
-    <main className={styles.first}>
+    <div>
       <Head>
         <title>Bamboo Cart</title>
         <link rel="icon" href="/Logo2.png" />
       </Head>
-      <Home />
-      <Featured />
-    </main>
+
+      <main className={styles.first}>
+        <Home />
+        <Featured />
+      </main>
+    </div>
   )
 }
 
