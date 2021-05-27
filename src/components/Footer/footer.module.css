@@ -84,7 +84,9 @@
   padding: 0;
   margin: 0;
 }
-
+.social, .instagram1:hover{
+  cursor: pointer;
+}
 .instagram1 {
   background-color: white;
   height: 14px;

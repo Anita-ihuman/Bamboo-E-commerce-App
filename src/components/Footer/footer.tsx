@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from './footer.module.css'
 
-
-const  Footer = () =>{
+const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
@@ -24,15 +23,15 @@ const  Footer = () =>{
                 <p>JOIN US ON</p>
               </div>
 
-              <div className={styles.social}>
+              <a href="#" className={styles.social}>
                 <img src="https://img.icons8.com/fluent-systems-filled/30/4a90e2/facebook-new.png" />
-              </div>
+              </a>
 
-              <div className={styles.social}>
+              <a href="#" className={styles.social}>
                 <img src="https://img.icons8.com/color/31/4a90e2/twitter-circled--v1.png" />
-              </div>
+              </a>
 
-              <a className={styles.instagram1}>
+              <a href="#" className={styles.instagram1}>
                 <i className="fab fa-instagram fa-1x"></i>
               </a>
             </div>
