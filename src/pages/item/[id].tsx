@@ -10,10 +10,7 @@ const Related = () => {
   const { dispatch } = useContext(furnitureContext)
 
   const router = useRouter()
-
-  console.log(router.query.id, Number(router.query.id))
-
-  const item = items[Number(router.query.id)]
+  const item = items[Number(router.query.id || 0)]
 
   const [num, setNum] = useState(0)
   const addNum = () => {
