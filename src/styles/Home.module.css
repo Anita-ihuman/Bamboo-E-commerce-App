@@ -28,8 +28,6 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   width: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
-  top: -140px;
   box-sizing: border-box;
   align-items: center;
 }
@@ -85,7 +83,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   left: 0;
   min-width: 100%;
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   transition: 0.5s;
 }
 

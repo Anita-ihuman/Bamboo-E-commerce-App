@@ -8,6 +8,10 @@ const Featured = () => {
   const [inHover, setHover] = useState(false)
   const { role, dispatch } = useContext(furnitureContext)
 
+  function refreshPage() {
+    window.location.reload(false)
+  }
+
   return (
     <>
       <section className={styles.section}>
@@ -16,8 +20,8 @@ const Featured = () => {
           <div className={styles.firstline}>
             {role.map((img, index) => (
               <div key={index} className={styles.slider_content}>
-                <Link href={`/item/${index}`}>
-                  <div className={styles.figure}>
+                <div className={styles.figure}>
+                  <Link href={`/item/${index}`}>
                     <img
                       src={img.image}
                       alt="item images"
@@ -25,28 +29,30 @@ const Featured = () => {
                       onMouseEnter={() => setHover(true)}
                       onMouseLeave={() => setHover(true)}
                     />
-                    {inHover && (
-                      <div className={styles.slider_costbox}>
-                        <h3>{img.cost}</h3>
-                        <figure
-                          className={styles.cart}
-                          onClick={() => {
-                            dispatch({ type: 'INCREMENT' })
-                          }}
-                        >
-                          <img src="/images/back.png" />
-                          <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
-                        </figure>
-                      </div>
-                    )}
-                  </div>
-                </Link>
+                  </Link>
+                  {inHover && (
+                    <div className={styles.slider_costbox}>
+                      <h3>{img.cost}</h3>
+                      <figure
+                        className={styles.cart}
+                        onClick={() => {
+                          dispatch({ type: 'INCREMENT' })
+                        }}
+                      >
+                        <img src="/images/back.png" />
+                        <i className="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                      </figure>
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
         </article>
 
-        <button className={styles.btn}>LOAD MORE</button>
+        <button className={styles.btn} onClick={refreshPage}>
+          LOAD MORE
+        </button>
         <Bamboo />
       </section>
     </>
