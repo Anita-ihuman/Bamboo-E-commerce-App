@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './Featured.module.css'
+import styles from '../../css/Featured.module.css'
 
 interface Chair {
   image: string
@@ -79,11 +79,6 @@ const App = () => {
     },
   ]
 
-  // const [cart, setCart] = useState([])
-  // const addToCart = (img) => {
-  //   console.log('hello earth people')
-  //   setCart([... cart, img]);
-  // }
   const [active, setActive] = useState('chair')
   return (
     <>

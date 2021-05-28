@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './details.module.css'
+import styles from '../../css/details.module.css'
 
 
 interface Role {

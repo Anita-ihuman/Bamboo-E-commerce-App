@@ -35,3 +35,7 @@ export interface Item {
   color: string
   count: number
 }
+
+export type ContextType = {
+  items: Item[]
+}

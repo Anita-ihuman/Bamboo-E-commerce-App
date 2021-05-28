@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
-import styles from './details.module.css'
+import styles from '../../css/details.module.css'
 import Others from './related-products'
 import Link from 'next/link'
 import { furnitureContext } from '../itemContext'
-import { items } from './item-array'
+import { items } from '../../data/item-array'
 import { useRouter } from 'next/router'
 
 const Related = () => {

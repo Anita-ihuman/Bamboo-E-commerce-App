@@ -1,5 +1,5 @@
 import React, { useState, createContext, useReducer } from 'react'
-import { furnitureContextProp, FurnitureProp, Role1 } from './interface'
+import { furnitureContextProp, FurnitureProp, Role1 } from '../interfaces/interface'
 
 export const furnitureContext = createContext({
   role: [],
@@ -9,7 +9,7 @@ export const furnitureContext = createContext({
   dispatch: () => {},
 } as furnitureContextProp)
 
-export const FurnitureProvider = ({ children }: FurnitureProp) => {
+ const FurnitureProvider = ({ children }: FurnitureProp) => {
   const [role, setRoles] = useState<Role1[]>([
     {
       image: '/images/furniture1.png',
@@ -80,3 +80,5 @@ export const FurnitureProvider = ({ children }: FurnitureProp) => {
     </furnitureContext.Provider>
   )
 }
+
+export default FurnitureProvider;
