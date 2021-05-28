@@ -4,9 +4,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   opacity: 1px;
   padding: 20px 0;
-  position: relative;
+width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   z-index: 30;
+  transition: all 0.7s ease-in;
+
 }
+
 .content {
   display: flex;
   justify-content: space-around;
@@ -20,6 +26,19 @@
 }
 .content_shop a {
   padding: 0 20px;
+}
+.content_shop {
+  display: flex;
+}
+.form input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 5px 7px 5px 0px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: relative;
+  bottom: 5px;
 }
 .content_shopicon {
   color: white;
@@ -90,9 +109,9 @@
   cursor: pointer;
 }
 .cart_count {
-  position: absolute;
-  bottom: 34px;
-  right: 80px;
+  position: relative;
+  bottom: 0px;
+  right: 12px;
   padding: 3px 7px;
   border-radius: 50px;
   background-color: #f05454;

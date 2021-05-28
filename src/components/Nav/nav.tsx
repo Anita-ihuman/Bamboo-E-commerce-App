@@ -1,16 +1,16 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { sideBar } from './Sidebar'
 import styles from './nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
 import { furnitureContext } from '../../pages/itemContext'
 
-
 const Navbar = () => {
-
   const [active, setActive] = useState(false)
-  console.log("hello anita ihuman")
+
   const { count } = useContext(furnitureContext)
+
+  const [input, setInput] = useState(false)
 
   return (
     <>
@@ -53,16 +53,32 @@ const Navbar = () => {
             </div>
 
             <div className={styles.content_shop}>
-              <Link href="" as="">
-                <a className={styles.content_shopicon}>
-                  <i className="fa fa-search fa-2x" aria-hidden="true"></i>
-                </a>
-              </Link>
+              <form className={styles.form}>
+                {input && (
+                  <input
+                    type="name"
+                    name="name"
+                    // onChange={updateName}
+                    placeholder="Search.."
+                  ></input>
+                )}
+
+                <Link href="/" as="">
+                  <a
+                    className={styles.content_shopicon}
+                    onClick={() => setInput((input) => !input)}
+                  >
+                    <i className="fa fa-search fa-2x" aria-hidden="true"></i>
+                  </a>
+                </Link>
+              </form>
 
               <Link href="/cart/cart" as="">
                 <a className={styles.content_shopicon}>
-                  <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                  <span className={styles.cart_count}> {count}</span>
+                  <i className="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                    {' '}
+                    <span className={styles.cart_count}> {count}</span>
+                  </i>
                 </a>
               </Link>
             </div>
