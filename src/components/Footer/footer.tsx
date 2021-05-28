@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './footer.module.css'
 
 const Footer = () => {
+  const [email, setEmail] = useState('')
+
+  const updateEmail = (e: { target: { value: React.SetStateAction<string> } }) => {
+    setEmail(e.target.value)
+  }
+  // const addMovie = (e: { preventDefault: () => void }) => {
+  //   e.preventDefault();
+  // }
   return (
     <>
       <footer className={styles.footer}>
@@ -14,6 +22,8 @@ const Footer = () => {
                   className={styles.blackbox_input}
                   type="email"
                   placeholder="Enter Your E-mail Address Here"
+                  value={email}
+                  onChange={updateEmail}
                 />
               </form>
             </div>

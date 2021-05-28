@@ -84,7 +84,8 @@
   padding: 0;
   margin: 0;
 }
-.social, .instagram1:hover{
+.social,
+.instagram1:hover {
   cursor: pointer;
 }
 .instagram1 {
