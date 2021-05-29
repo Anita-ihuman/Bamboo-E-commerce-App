@@ -35,7 +35,9 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   box-sizing: border-box;
   align-items: center;
   display: flex;
-  overflow: hidden;
+  position: relative;
+  top: -140px;
+overflow: hidden;
 }
 .btn:hover {
   color: #ffffff;
@@ -88,11 +90,12 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
 }
 
 .inner {
-  padding: 0 40px;
+  padding: 0px 40px;
+  padding-bottom: 10px;
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 56%;
+  top: 59%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -129,6 +132,7 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   .slider-wrapper,
   .slide {
     height: calc(100vh - 75px);
+    overflow: hidden;
   }
 }
 
@@ -161,6 +165,9 @@ link for image sizing https://temani.hashnode.dev/finally-a-css-only-solution-to
   }
   .inner h2{
      font-size: 28px;
+  }
+    .slider-content .inner h1 {
+    font-size: 32px;
   }
 }
 

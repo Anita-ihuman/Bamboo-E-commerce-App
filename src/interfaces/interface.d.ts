@@ -39,3 +39,8 @@ export interface Item {
 export type ContextType = {
   items: Item[]
 }
+
+export interface Related {
+  image: string
+  cost: string
+}

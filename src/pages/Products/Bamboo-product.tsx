@@ -1,84 +1,8 @@
 import React, { useState } from 'react'
 import styles from '../../css/Featured.module.css'
-
-interface Chair {
-  image: string
-  cost: string
-}
-
-interface Cabinet {
-  image: string
-  cost: string
-}
-
-interface Sofa {
-  image: string
-  cost: string
-}
-
-interface Bench {
-  image: string
-  cost: string
-}
+import { chair, cabinet, sofa, bench } from '../../data/bamboo-product-array'
 
 const App = () => {
-  const Chairs: Chair[] = [
-    {
-      image: '/images/cabinet1.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet2.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet3.png',
-      cost: '$19.06',
-    },
-  ]
-  const Cabinets: Cabinet[] = [
-    {
-      image: '/images/cabinet1.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet2.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet3.png',
-      cost: '$19.06',
-    },
-  ]
-  const Sofas: Sofa[] = [
-    {
-      image: '/images/cabinet1.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet2.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet3.png',
-      cost: '$19.06',
-    },
-  ]
-  const Benches: Bench[] = [
-    {
-      image: '/images/cabinet1.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet2.png',
-      cost: '$19.06',
-    },
-    {
-      image: '/images/cabinet3.png',
-      cost: '$19.06',
-    },
-  ]
-
   const [active, setActive] = useState('chair')
   return (
     <>
@@ -92,7 +16,7 @@ const App = () => {
         </ul>
         {active === 'chair' && (
           <div className={styles.b_container}>
-            {Chairs.map((img, index) => (
+            {chair.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
                 <h3>{}</h3>
@@ -102,7 +26,7 @@ const App = () => {
         )}
         {active === 'cabinet' && (
           <div className={styles.b_container}>
-            {Cabinets.map((img, index) => (
+            {cabinet.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
                 <h3>{}</h3>
@@ -112,7 +36,7 @@ const App = () => {
         )}
         {active === 'sofa' && (
           <div className={styles.b_container}>
-            {Sofas.map((img, index) => (
+            {sofa.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
                 <h3>{}</h3>
@@ -122,7 +46,7 @@ const App = () => {
         )}
         {active === 'bench' && (
           <div className={styles.b_container}>
-            {Benches.map((img, index) => (
+            {bench.map((img, index) => (
               <div key={index} className={styles.item_slider}>
                 <img src={img.image} alt="" className={styles.item_img} />
                 <h3>{}</h3>

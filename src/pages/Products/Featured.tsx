@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import styles from '../../css/Featured.module.css'
-import Bamboo from './Bamboo'
+import Bamboo from './Bamboo-product'
 import { furnitureContext } from '../itemContext'
 import Link from 'next/link'
 
