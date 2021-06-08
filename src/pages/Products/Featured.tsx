@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import styles from '../../css/Featured.module.css'
 import Bamboo from './Bamboo-product'
-import { furnitureContext } from '../itemContext'
+import { furnitureContext } from '../../contexts/itemContext'
 import Link from 'next/link'
 
 const Featured = () => {
