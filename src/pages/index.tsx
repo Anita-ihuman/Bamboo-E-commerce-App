@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 interface Content {
   title: string
-  big: string
+  subtitle: string
   description: string
   description2: string
   description3: string
@@ -19,7 +19,7 @@ interface Content {
 const content: Content[] = [
   {
     title: 'INDOORS',
-    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    subtitle: 'See Bamboo’s New Range Of Indoor Furniture',
     description: 'Classic meet modern living, ',
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
@@ -28,7 +28,7 @@ const content: Content[] = [
   },
   {
     title: 'INDOORS',
-    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    subtitle: 'See Bamboo’s New Range Of Indoor Furniture',
     description: 'Classic meet modern living, ',
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
@@ -37,7 +37,7 @@ const content: Content[] = [
   },
   {
     title: 'INDOORS',
-    big: 'See Bamboo’s New Range Of Indoor Furniture',
+    subtitle: 'See Bamboo’s New Range Of Indoor Furniture',
     description: 'Classic meet modern living,',
     description2: ' Bamboo has a fantastic range of indoor furniture,',
     description3: ' perfect for any modern home',
@@ -79,7 +79,7 @@ const App = () => {
               >
                 <div className={styles.inner}>
                   <h3>{item.title}</h3>
-                  <h2> {item.big}</h2>
+                  <h2> {item.subtitle}</h2>
                   <p>{item.description}</p>
                   <p>{item.description2}</p>
                   <p>{item.description3}</p>

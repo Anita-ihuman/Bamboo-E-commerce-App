@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react'
 // import Link from 'next/link'
-import styles from '../../css/admin.module.css'
+import styles from '../../assets/css/admin.module.css'
 const Admin = () => {
   return (
     <>

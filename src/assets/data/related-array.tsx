@@ -1,4 +1,4 @@
-import { Related } from '../interfaces/interface'
+import { Related } from '../../interfaces/interface'
 export const related: Related[] = [
   {
     image: '/images/product1.png',

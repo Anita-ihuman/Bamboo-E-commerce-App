@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../css/details.module.css'
-import { related } from '../../data/related-array'
+import styles from '../../assets/css/details.module.css'
+import { related } from '../../assets/data/related-array'
 
 const Related = () => {
   return (

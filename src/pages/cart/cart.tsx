@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react'
 // import Link from 'next/link'
-import styles from '../../css/cart.module.css'
+import styles from '../../assets/css/cart.module.css'
 const Cart = () => {
   return (
     <>

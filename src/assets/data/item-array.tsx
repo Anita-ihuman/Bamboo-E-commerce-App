@@ -1,4 +1,4 @@
-import { Item } from '../interfaces/interface'
+import { Item } from '../../interfaces/interface'
 
 export const items: Item[] = [
   {

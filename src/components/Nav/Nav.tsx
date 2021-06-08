@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react'
 import { sideBar } from './SideBar'
-import styles from '../../css/nav.module.css'
+import styles from '../../assets/css/nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
 import { furnitureContext } from '../../contexts/itemContext'

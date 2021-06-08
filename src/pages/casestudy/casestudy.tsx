@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../css/styles.module.css'
+import styles from '../../assets/css/styles.module.css'
 import Goals from './goal.'
 import Traits from './traits'
 

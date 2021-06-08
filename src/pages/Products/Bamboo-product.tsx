@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import styles from '../../css/Featured.module.css'
-import { chair, cabinet, sofa, bench } from '../../data/bamboo-product-array'
+import styles from '../../assets/css/Featured.module.css'
+import { chair, cabinet, sofa, bench } from '../../assets/data/bamboo-product-array'
 
 const App = () => {
   const [active, setActive] = useState('chair')

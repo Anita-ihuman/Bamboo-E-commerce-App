@@ -1,4 +1,4 @@
-import { Chair, Cabinet, Sofa, Bench } from '../interfaces/bamboo-product'
+import { Chair, Cabinet, Sofa, Bench } from '../../interfaces/bamboo-product'
 
 export const chair: Chair[] = [
   {
