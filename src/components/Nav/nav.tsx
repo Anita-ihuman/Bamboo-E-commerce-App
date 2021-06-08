@@ -1,9 +1,9 @@
 import { useState, useContext } from 'react'
-import { sideBar } from './Sidebar'
+import { sideBar } from './SideBar'
 import styles from '../../css/nav.module.css'
 import Link from 'next/link'
 import { IconContext } from 'react-icons'
-import { furnitureContext } from '../../pages/itemContext'
+import { furnitureContext } from '../../contexts/itemContext'
 
 const Navbar = () => {
   const [active, setActive] = useState(false)

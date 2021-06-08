@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import styles from '../../css/details.module.css'
 import Others from './related-products'
 import Link from 'next/link'
-import { furnitureContext } from '../itemContext'
+import { furnitureContext } from '../../contexts/itemContext'
 import { items } from '../../data/item-array'
 import { useRouter } from 'next/router'
 

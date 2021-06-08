@@ -1,5 +1,6 @@
 import Layout from '../components/Layout/Layout'
-import  FurnitureProvider from './itemContext'
+import FurnitureProvider from '../contexts/itemContext'
+
 interface ElementProps {
   Component: string & any
   pageProps: string
